@@ -63,3 +63,14 @@ Once the repository is configured and all dependencies are installed, you can ru
 
 ```bash
 streamlit run main.app
+```
+
+### Running the price scraping script
+
+You can run the web scraping script (Jupyter Notebook) using the following command:
+
+```bash
+cd scraping
+```
+
+and opening the ah_listing.ipynb
