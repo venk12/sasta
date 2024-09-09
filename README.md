@@ -1,12 +1,6 @@
-# Grocery Price Comparison Bot
+# sasta
 
-This bot helps users find the best grocery prices and deals from nearby supermarkets such as Albert Heijn, ALDI, Jumbo, Lidl, Dirk, and Toko. It aggregates prices from these supermarkets to help users make more informed shopping decisions.
-
-## Features
-
-- Compare prices from multiple supermarkets in your area.
-- Get the best deals and discounts on groceries.
-- Supports supermarkets including Albert Heijn, ALDI, Jumbo, Lidl, Dirk, and Toko.
+This program helps users find the best grocery prices and deals from nearby supermarkets such as Albert Heijn, ALDI, Jumbo, Lidl, Dirk, and Toko. It aggregates prices from these supermarkets to help users get the best deals nearby.
 
 ## Setup Instructions
 
