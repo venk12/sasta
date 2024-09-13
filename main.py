@@ -8,8 +8,18 @@ from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
 from elevenlabs import play, stream, save
 
+from geocode import generate_map
+
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 eleven_client = ElevenLabs(api_key=st.secrets["ELEVEN_LABS_KEY"])
+
+def display_map(html_file):
+    # Read the content of the HTML file
+    with open(html_file, 'r', encoding='utf-8') as file:
+        map_html = file.read()
+
+    # Display the HTML content in Streamlit
+    components.html(map_html, height=600, scrolling=True)
 
 # Load the CSV file
 df_prices = pd.read_csv("sample_prices.csv")
@@ -23,19 +33,20 @@ system_prompt = {
     "content": "You are a helpful and resourceful virtual shopping assistant" + 
                 "specializing in finding the best grocery prices and deals from local supermarkets," + 
                 "including Albert Heijn, ALDI, Jumbo, Lidl, Dirk." +
-                "You can then receive requests" + 
-                "for single items or lists of items and provide a clear table showing price comparisons across these stores." +
-                f"You can use the price list from this table below:\n{df_prices.to_string(index=False)}\n"+
-                "To the output, Add a column called Lowest Price 💸 populate it with the supermarket where you can get the cheapest deal"+
-                "Below the table also provide the links to the product pages from store which has the lowest price "+
-                "You can also provide detailed information on the best deals and offers. such as Albert Heijn BONUS, Jumbo EXTRA" +
+                "You can then receive requests" + "Sometime the user might give you a receipe, in that case, you should list down the groceries required" +
+                " to cook the receipe and then use that list to find the best prices across supermarket." +
+                " If the user inputs single items or lists of items and provide a clear table showing price comparisons across these stores." +
+                # f"You can use the price list from this table below:\n{df_prices.to_string(index=False)}\n"+
+                " To the output, Add a column called Lowest Price 💸 populate it with the supermarket where you can get lowest price"+
+                " Below the table also provide the links to the product pages from store which has the lowest price "+
+                " You can also provide detailed information on the best deals and offers. such as Albert Heijn BONUS, Jumbo EXTRA" +
                 " After giving all the details ask them where they usually get their groceries from." +
                 " based on their response, give them the savings from sasta ( difference between cost of groceries from the supermarket they usually buy from " +
                 " vs the lowest price from the table)"+
-                " and also the monthly savings (how much they save per month) by multiplying the above number by 4" +
+                " and also the monthly savings (how much they could potentially save per month) by multiplying the above number by 4" +
                 " Once you give this figure, ask for a call to action to signup using this link: https://form.jotform.com/242401875157356"
-                "Your tone is friendly, professional, and efficient, helping users save time and money on their grocery shopping." + 
-                "Whenever possible, you offer additional tips for budget-friendly choices and seasonal discounts."
+                " Your tone is friendly, professional, and efficient, helping users save time and money on their grocery shopping." + 
+                " Whenever possible, you offer additional tips for budget-friendly choices and seasonal discounts."
 }
 
 # Sidebar input for postal code
@@ -54,38 +65,37 @@ if postal_code == "":
 
 if postal_code != "" and location_identified == False:       
     st.write(f"Your postal code: {postal_code}")
-
-    # Simulate waiting spinner for 2 seconds
     with st.spinner('Locating the nearest stores...'):
-        time.sleep(1.5)
+        generate_map(postal_code, st.secrets["GOOGLE_MAPS_KEY"])
 
-    # Add the image
-    st.image("shops_nearby.png", caption="Shops near you", use_column_width=True)
-    
+        html_file = "supermarkets_map.html"
+        display_map(html_file)
+
+        # Simulate waiting spinner for 2 seconds
+        # time.sleep(1.5)    
     
     location_response = "Nice. You have the following shops near you: AH, Lidl, Jumbo, and Aldi near you. Perfect!"
     query = "What do you want to buy today?"
 
-    
     # Display the response and query
     st.write(location_response)
     st.write(query)
     location_identified = True
 
-    with st.spinner('Generating a sample grocery list for you...'):
-        time.sleep(1)
-        # Display the sample grocery list as a table
-        sample_items = df_prices[['Items', 'Qty']].head(5)
-        # st.table(sample_items)
+    # with st.spinner('Generating a sample grocery list for you...'):
+    #     time.sleep(1)
+    #     # Display the sample grocery list as a table
+    #     sample_items = df_prices[['Items', 'Qty']].head(5)
+    #     # st.table(sample_items)
 
-        # Create a string version of the table to "copy"
-        grocery_list = sample_items.to_string(index=True)
+    #     # Create a string version of the table to "copy"
+    #     grocery_list = sample_items.to_string(index=False)
         
-        # Button to copy to clipboard
-        st.info(
-            "You can copy the items to the clipboard by clicking here ↘️")
-        st.code(
-            grocery_list)
+    #     # Button to copy to clipboard
+    #     st.info(
+    #         "You can copy these sample items to the clipboard by clicking here ↘️")
+    #     st.code(
+    #         grocery_list)
 
 # Initialize session state for the model and messages
 if "openai_model" not in st.session_state:

@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd0ae1b230e44bedbb54a0f4756cb206 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cd0ae1b230e44bedbb54a0f4756cb206" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cd0ae1b230e44bedbb54a0f4756cb206 = L.map(
+                "map_cd0ae1b230e44bedbb54a0f4756cb206",
+                {
+                    center: [52.2180177, 6.891761499999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a610ed18a220d89272b35f11cb87b226 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a610ed18a220d89272b35f11cb87b226.addTo(map_cd0ae1b230e44bedbb54a0f4756cb206);
+        
+    
+            var marker_cluster_15a577c58a78c4cb0c66c7560588c773 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_32b06a1c0c0dfa96cf2b573936bc124a = L.marker(
+                [52.22931999999999, 6.857769999999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_160221713584141bef47ca132868fb8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_32b06a1c0c0dfa96cf2b573936bc124a.setIcon(icon_160221713584141bef47ca132868fb8e);
+        
+    
+        var popup_f14ec0d5fea4ad97f7840edb3500ef46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_067732221417fea3501e6421154d9867 = $(`<div id="html_067732221417fea3501e6421154d9867" style="width: 100.0%; height: 100.0%;">Supermarket Lidl Zonstraat 48B, Enschede</div>`)[0];
+                popup_f14ec0d5fea4ad97f7840edb3500ef46.setContent(html_067732221417fea3501e6421154d9867);
+            
+        
+
+        marker_32b06a1c0c0dfa96cf2b573936bc124a.bindPopup(popup_f14ec0d5fea4ad97f7840edb3500ef46)
+        ;
+
+        
+    
+    
+            var marker_9e0bdc0ae85558196e8883452404343e = L.marker(
+                [52.21182349999999, 6.8841173],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_d27453f15ced9e52f87ab5c4dcc7de8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e0bdc0ae85558196e8883452404343e.setIcon(icon_d27453f15ced9e52f87ab5c4dcc7de8e);
+        
+    
+        var popup_60d1346443b682cffc8a5801bd851fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15b2bf16d2b1a566b4a8c2406a371951 = $(`<div id="html_15b2bf16d2b1a566b4a8c2406a371951" style="width: 100.0%; height: 100.0%;">Supermarket Lidl Slijpsteen 11, Enschede</div>`)[0];
+                popup_60d1346443b682cffc8a5801bd851fd8.setContent(html_15b2bf16d2b1a566b4a8c2406a371951);
+            
+        
+
+        marker_9e0bdc0ae85558196e8883452404343e.bindPopup(popup_60d1346443b682cffc8a5801bd851fd8)
+        ;
+
+        
+    
+    
+            var marker_370c02a602d7c71410d9c77623951df1 = L.marker(
+                [52.208918, 6.9086512],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_f3ffbe56ae6a73a3e1b9f1e64d71eda6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_370c02a602d7c71410d9c77623951df1.setIcon(icon_f3ffbe56ae6a73a3e1b9f1e64d71eda6);
+        
+    
+        var popup_ab16318f223858a0bf4499ef1f7bcdef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81de64d17b156e2cba9f92e863c8adf3 = $(`<div id="html_81de64d17b156e2cba9f92e863c8adf3" style="width: 100.0%; height: 100.0%;">Supermarket Lidl Brinkstraat 336, Enschede</div>`)[0];
+                popup_ab16318f223858a0bf4499ef1f7bcdef.setContent(html_81de64d17b156e2cba9f92e863c8adf3);
+            
+        
+
+        marker_370c02a602d7c71410d9c77623951df1.bindPopup(popup_ab16318f223858a0bf4499ef1f7bcdef)
+        ;
+
+        
+    
+    
+            var marker_3cc2018d490a05fa00c277c2208a934b = L.marker(
+                [52.1919543, 6.8811025],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_3a21dcb59554e2eb2ee6fb10279edd78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3cc2018d490a05fa00c277c2208a934b.setIcon(icon_3a21dcb59554e2eb2ee6fb10279edd78);
+        
+    
+        var popup_fad039262bf6ee4257a2b323db251946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d86a2df9382195c97c1571525d86aa9 = $(`<div id="html_6d86a2df9382195c97c1571525d86aa9" style="width: 100.0%; height: 100.0%;">Supermarket Lidl Wesseler-Nering 2b, Enschede</div>`)[0];
+                popup_fad039262bf6ee4257a2b323db251946.setContent(html_6d86a2df9382195c97c1571525d86aa9);
+            
+        
+
+        marker_3cc2018d490a05fa00c277c2208a934b.bindPopup(popup_fad039262bf6ee4257a2b323db251946)
+        ;
+
+        
+    
+    
+            var marker_6bc2f61f1b1ee63a7c2ec9c8d94dfce7 = L.marker(
+                [52.22976999999999, 6.92116],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ffe7017a322ac2572c275d0765828c1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6bc2f61f1b1ee63a7c2ec9c8d94dfce7.setIcon(icon_ffe7017a322ac2572c275d0765828c1a);
+        
+    
+        var popup_64cc13deac009e10b4b0bcea6b3615a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_371982c527b56d2015df20e506a3e899 = $(`<div id="html_371982c527b56d2015df20e506a3e899" style="width: 100.0%; height: 100.0%;">Supermarket Lidl Hortensiastraat 140, Enschede</div>`)[0];
+                popup_64cc13deac009e10b4b0bcea6b3615a1.setContent(html_371982c527b56d2015df20e506a3e899);
+            
+        
+
+        marker_6bc2f61f1b1ee63a7c2ec9c8d94dfce7.bindPopup(popup_64cc13deac009e10b4b0bcea6b3615a1)
+        ;
+
+        
+    
+    
+            var marker_68e1200baf3503716be43d8da0b82ee7 = L.marker(
+                [52.2292066, 6.8583859],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_b79123ffc00180c0d7e294b7db0af3f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_68e1200baf3503716be43d8da0b82ee7.setIcon(icon_b79123ffc00180c0d7e294b7db0af3f3);
+        
+    
+        var popup_32bc3a59ce7c488e6ba8e72659c00852 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f57598d11ddf651b23f703ef77c7a93 = $(`<div id="html_7f57598d11ddf651b23f703ef77c7a93" style="width: 100.0%; height: 100.0%;">Supermarket Winkelcentrum Twekkelerveld G.J. van Heekstraat 241, Enschede</div>`)[0];
+                popup_32bc3a59ce7c488e6ba8e72659c00852.setContent(html_7f57598d11ddf651b23f703ef77c7a93);
+            
+        
+
+        marker_68e1200baf3503716be43d8da0b82ee7.bindPopup(popup_32bc3a59ce7c488e6ba8e72659c00852)
+        ;
+
+        
+    
+    
+            var marker_1a7a3bf422bfa68d46b3333ff6a6b488 = L.marker(
+                [52.2193937, 6.929265999999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_0325ab25c9ebd11649678ce23c81fc37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1a7a3bf422bfa68d46b3333ff6a6b488.setIcon(icon_0325ab25c9ebd11649678ce23c81fc37);
+        
+    
+        var popup_daf7bb22d5c7d2d19ea27b614ef41545 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0de212458e218a029f9a4d5928de3e48 = $(`<div id="html_0de212458e218a029f9a4d5928de3e48" style="width: 100.0%; height: 100.0%;">Supermarket AH XL Noord Esmarkerrondweg Noord Esmarkerrondweg 421, Enschede</div>`)[0];
+                popup_daf7bb22d5c7d2d19ea27b614ef41545.setContent(html_0de212458e218a029f9a4d5928de3e48);
+            
+        
+
+        marker_1a7a3bf422bfa68d46b3333ff6a6b488.bindPopup(popup_daf7bb22d5c7d2d19ea27b614ef41545)
+        ;
+
+        
+    
+    
+            var marker_a89adce6c86cb59ae1c9ab188b8a8229 = L.marker(
+                [52.19159759999999, 6.8785875],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_16fda74c92598a0ec770232bad227f3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a89adce6c86cb59ae1c9ab188b8a8229.setIcon(icon_16fda74c92598a0ec770232bad227f3d);
+        
+    
+        var popup_57fd2e51346ed55dee55d78509a3d878 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4f9fc585e927957df708e9bb52d6683 = $(`<div id="html_e4f9fc585e927957df708e9bb52d6683" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Wesseler-Nering 21, Enschede</div>`)[0];
+                popup_57fd2e51346ed55dee55d78509a3d878.setContent(html_e4f9fc585e927957df708e9bb52d6683);
+            
+        
+
+        marker_a89adce6c86cb59ae1c9ab188b8a8229.bindPopup(popup_57fd2e51346ed55dee55d78509a3d878)
+        ;
+
+        
+    
+    
+            var marker_5c02597f14217a834e66b4b773545dd0 = L.marker(
+                [52.26241, 6.822234],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a53896a2a70808c9a0f99cabe05b8961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5c02597f14217a834e66b4b773545dd0.setIcon(icon_a53896a2a70808c9a0f99cabe05b8961);
+        
+    
+        var popup_1f7aaba1037adb0dadfb24471f046a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbed5cbb56fd6fd2296dff19e25be9f9 = $(`<div id="html_cbed5cbb56fd6fd2296dff19e25be9f9" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Willem de Merodestraat 34-40, Hengelo</div>`)[0];
+                popup_1f7aaba1037adb0dadfb24471f046a8c.setContent(html_cbed5cbb56fd6fd2296dff19e25be9f9);
+            
+        
+
+        marker_5c02597f14217a834e66b4b773545dd0.bindPopup(popup_1f7aaba1037adb0dadfb24471f046a8c)
+        ;
+
+        
+    
+    
+            var marker_54eea8a723863e65d423dd937f72b624 = L.marker(
+                [52.2288192, 6.859227199999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_7b1234c45df1eb8db2302a848dbd45a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_54eea8a723863e65d423dd937f72b624.setIcon(icon_7b1234c45df1eb8db2302a848dbd45a4);
+        
+    
+        var popup_21a476c3424e03cca4251806714e9d6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bd56a4a7a21969b58b17d69ad42d327 = $(`<div id="html_1bd56a4a7a21969b58b17d69ad42d327" style="width: 100.0%; height: 100.0%;">Supermarket AH Zonstraat Zonstraat 28, Enschede</div>`)[0];
+                popup_21a476c3424e03cca4251806714e9d6a.setContent(html_1bd56a4a7a21969b58b17d69ad42d327);
+            
+        
+
+        marker_54eea8a723863e65d423dd937f72b624.bindPopup(popup_21a476c3424e03cca4251806714e9d6a)
+        ;
+
+        
+    
+    
+            var marker_60e51ea1c23e08d3ea087e2f7a103aee = L.marker(
+                [52.2254376, 6.890025700000001],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_472b0e6408e10a17236d951cf1500e52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_60e51ea1c23e08d3ea087e2f7a103aee.setIcon(icon_472b0e6408e10a17236d951cf1500e52);
+        
+    
+        var popup_102f3ef2f1bd5153eb3c9ffa63f9885b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_879029255607678b7d4814f3ef1b904d = $(`<div id="html_879029255607678b7d4814f3ef1b904d" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo De Coöperatie 15-3, Enschede</div>`)[0];
+                popup_102f3ef2f1bd5153eb3c9ffa63f9885b.setContent(html_879029255607678b7d4814f3ef1b904d);
+            
+        
+
+        marker_60e51ea1c23e08d3ea087e2f7a103aee.bindPopup(popup_102f3ef2f1bd5153eb3c9ffa63f9885b)
+        ;
+
+        
+    
+    
+            var marker_7ad61f0ff9449630fbfac45940187abb = L.marker(
+                [52.22464919999999, 6.881961599999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_401bdcab4d38b97eed7f593226a64974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7ad61f0ff9449630fbfac45940187abb.setIcon(icon_401bdcab4d38b97eed7f593226a64974);
+        
+    
+        var popup_799f38e9b29b2c5059ad12da7824fcaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f357a8b7f61e79ee1b3226f78c7f27b = $(`<div id="html_2f357a8b7f61e79ee1b3226f78c7f27b" style="width: 100.0%; height: 100.0%;">Supermarket ALDI supermarket Schuttersveld 3, Enschede</div>`)[0];
+                popup_799f38e9b29b2c5059ad12da7824fcaf.setContent(html_2f357a8b7f61e79ee1b3226f78c7f27b);
+            
+        
+
+        marker_7ad61f0ff9449630fbfac45940187abb.bindPopup(popup_799f38e9b29b2c5059ad12da7824fcaf)
+        ;
+
+        
+    
+    
+            var marker_75f68cc73abd13130b497f554a07543a = L.marker(
+                [52.2142652, 6.886095399999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_e2466b2e6095489a5f37cc3320535975 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_75f68cc73abd13130b497f554a07543a.setIcon(icon_e2466b2e6095489a5f37cc3320535975);
+        
+    
+        var popup_58beb9ae2936bd956d48f228e89422fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6ca09fa1545bbd5beac4aac4f2e99fd = $(`<div id="html_f6ca09fa1545bbd5beac4aac4f2e99fd" style="width: 100.0%; height: 100.0%;">Supermarket ALDI Haaksbergerstraat 202, Enschede</div>`)[0];
+                popup_58beb9ae2936bd956d48f228e89422fd.setContent(html_f6ca09fa1545bbd5beac4aac4f2e99fd);
+            
+        
+
+        marker_75f68cc73abd13130b497f554a07543a.bindPopup(popup_58beb9ae2936bd956d48f228e89422fd)
+        ;
+
+        
+    
+    
+            var marker_5bcfc2ef3a05ea1df8e8658b464f7fb3 = L.marker(
+                [52.2290973, 6.858635599999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_40d070c55d3d1f3c3f602b51bd264a33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5bcfc2ef3a05ea1df8e8658b464f7fb3.setIcon(icon_40d070c55d3d1f3c3f602b51bd264a33);
+        
+    
+        var popup_b80be61bcb8005e7508407077e407e1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c831fa7216f4f1d7db102630520f719 = $(`<div id="html_9c831fa7216f4f1d7db102630520f719" style="width: 100.0%; height: 100.0%;">Supermarket Ana Market Zonstraat 38, Enschede</div>`)[0];
+                popup_b80be61bcb8005e7508407077e407e1e.setContent(html_9c831fa7216f4f1d7db102630520f719);
+            
+        
+
+        marker_5bcfc2ef3a05ea1df8e8658b464f7fb3.bindPopup(popup_b80be61bcb8005e7508407077e407e1e)
+        ;
+
+        
+    
+    
+            var marker_d9493a449294d0f427ec30aa7415b171 = L.marker(
+                [52.212979, 6.895100999999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_60da0feecd10ebaa63c34c87c9853188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d9493a449294d0f427ec30aa7415b171.setIcon(icon_60da0feecd10ebaa63c34c87c9853188);
+        
+    
+        var popup_7cc450aea22862dc5847eb77c4639e4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d5c807aa267f9811196a3e882799d12 = $(`<div id="html_2d5c807aa267f9811196a3e882799d12" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Kuipersdijk 118, Enschede</div>`)[0];
+                popup_7cc450aea22862dc5847eb77c4639e4b.setContent(html_2d5c807aa267f9811196a3e882799d12);
+            
+        
+
+        marker_d9493a449294d0f427ec30aa7415b171.bindPopup(popup_7cc450aea22862dc5847eb77c4639e4b)
+        ;
+
+        
+    
+    
+            var marker_b127f7597d4f8959c7714d2f30f536a2 = L.marker(
+                [52.2215739, 6.8979577],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ca186f7025ad1bcf860f8249b0a3583d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b127f7597d4f8959c7714d2f30f536a2.setIcon(icon_ca186f7025ad1bcf860f8249b0a3583d);
+        
+    
+        var popup_a3b9052f00791f1cca2842eb7d5042e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7af26177bc620fc25694924b656dcc9 = $(`<div id="html_d7af26177bc620fc25694924b656dcc9" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Noorderhagen 75, Enschede</div>`)[0];
+                popup_a3b9052f00791f1cca2842eb7d5042e4.setContent(html_d7af26177bc620fc25694924b656dcc9);
+            
+        
+
+        marker_b127f7597d4f8959c7714d2f30f536a2.bindPopup(popup_a3b9052f00791f1cca2842eb7d5042e4)
+        ;
+
+        
+    
+    
+            var marker_4a1684f836558d57a0aabd2b35474456 = L.marker(
+                [52.23152100000001, 6.891671],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_0053adfe91c06bcb0a9c8553e54319a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4a1684f836558d57a0aabd2b35474456.setIcon(icon_0053adfe91c06bcb0a9c8553e54319a2);
+        
+    
+        var popup_d61f52121d3e69892b62a83286469725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa96763b79be242a20b72740faf8ede6 = $(`<div id="html_fa96763b79be242a20b72740faf8ede6" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Brouwerijplein 55, Enschede</div>`)[0];
+                popup_d61f52121d3e69892b62a83286469725.setContent(html_fa96763b79be242a20b72740faf8ede6);
+            
+        
+
+        marker_4a1684f836558d57a0aabd2b35474456.bindPopup(popup_d61f52121d3e69892b62a83286469725)
+        ;
+
+        
+    
+    
+            var marker_a9a6f72d185ef1aa31d6b3b45ae8f965 = L.marker(
+                [52.223856, 6.910622999999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_f205af7ad2c122b062ffe34c0965b94d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a9a6f72d185ef1aa31d6b3b45ae8f965.setIcon(icon_f205af7ad2c122b062ffe34c0965b94d);
+        
+    
+        var popup_53f692a37e7e24ce972fc9ab669e0acc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af3f9282d2459f80001a030044fb19fc = $(`<div id="html_af3f9282d2459f80001a030044fb19fc" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Lage Bothofstraat 161, Enschede</div>`)[0];
+                popup_53f692a37e7e24ce972fc9ab669e0acc.setContent(html_af3f9282d2459f80001a030044fb19fc);
+            
+        
+
+        marker_a9a6f72d185ef1aa31d6b3b45ae8f965.bindPopup(popup_53f692a37e7e24ce972fc9ab669e0acc)
+        ;
+
+        
+    
+    
+            var marker_46dbf4c47d36401d7761660e49dc6f93 = L.marker(
+                [52.206207, 6.878991],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_2f1cc624032a76615487567a1897b9c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_46dbf4c47d36401d7761660e49dc6f93.setIcon(icon_2f1cc624032a76615487567a1897b9c9);
+        
+    
+        var popup_b011f8a77ee8782e61264d98591a5547 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b2da45798f24ac496f5b893d0208822 = $(`<div id="html_7b2da45798f24ac496f5b893d0208822" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Burgemeester van Veenlaan 100, Enschede</div>`)[0];
+                popup_b011f8a77ee8782e61264d98591a5547.setContent(html_7b2da45798f24ac496f5b893d0208822);
+            
+        
+
+        marker_46dbf4c47d36401d7761660e49dc6f93.bindPopup(popup_b011f8a77ee8782e61264d98591a5547)
+        ;
+
+        
+    
+    
+            var marker_27a2dd33bc54387e7a3a3ccaafde3ec6 = L.marker(
+                [52.21147, 6.86309],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_0554657c5b8e398f87013b3580499834 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27a2dd33bc54387e7a3a3ccaafde3ec6.setIcon(icon_0554657c5b8e398f87013b3580499834);
+        
+    
+        var popup_69c8e08ac52d703e6bf4fe68a9401e68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b87b02ec93c608891359a8cb1251c14d = $(`<div id="html_b87b02ec93c608891359a8cb1251c14d" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Wethouder Nijhuisstraat 238, Enschede</div>`)[0];
+                popup_69c8e08ac52d703e6bf4fe68a9401e68.setContent(html_b87b02ec93c608891359a8cb1251c14d);
+            
+        
+
+        marker_27a2dd33bc54387e7a3a3ccaafde3ec6.bindPopup(popup_69c8e08ac52d703e6bf4fe68a9401e68)
+        ;
+
+        
+    
+    
+            var marker_445f7f5a4fe3ea016fe26ecba854d605 = L.marker(
+                [52.228929, 6.920525],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_44ca2d68681a7e4f747543d7cf295a88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_445f7f5a4fe3ea016fe26ecba854d605.setIcon(icon_44ca2d68681a7e4f747543d7cf295a88);
+        
+    
+        var popup_6b2db4c8f32de4f3b58b29fe3cf13c35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_676b306aa5d58e0a49f6b3641815e719 = $(`<div id="html_676b306aa5d58e0a49f6b3641815e719" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Magnoliastraat 100, Enschede</div>`)[0];
+                popup_6b2db4c8f32de4f3b58b29fe3cf13c35.setContent(html_676b306aa5d58e0a49f6b3641815e719);
+            
+        
+
+        marker_445f7f5a4fe3ea016fe26ecba854d605.bindPopup(popup_6b2db4c8f32de4f3b58b29fe3cf13c35)
+        ;
+
+        
+    
+    
+            var marker_3e314327bb29d6a286b17a13642f976e = L.marker(
+                [52.22468199999999, 6.956032],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_7d111471f4736364511b2e5cf9492d47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3e314327bb29d6a286b17a13642f976e.setIcon(icon_7d111471f4736364511b2e5cf9492d47);
+        
+    
+        var popup_53cebbca73b38f528ae1d72de3be7165 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2f0646d871d0f8e18955cf53c7ee82b = $(`<div id="html_e2f0646d871d0f8e18955cf53c7ee82b" style="width: 100.0%; height: 100.0%;">Supermarket Jumbo Outlet Lenteweg 62, Enschede</div>`)[0];
+                popup_53cebbca73b38f528ae1d72de3be7165.setContent(html_e2f0646d871d0f8e18955cf53c7ee82b);
+            
+        
+
+        marker_3e314327bb29d6a286b17a13642f976e.bindPopup(popup_53cebbca73b38f528ae1d72de3be7165)
+        ;
+
+        
+    
+    
+            var marker_0ff214f63b22786d49685e9c55ac0a60 = L.marker(
+                [52.2295314, 6.858207699999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_08611a646573054ddc131278fb001e65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0ff214f63b22786d49685e9c55ac0a60.setIcon(icon_08611a646573054ddc131278fb001e65);
+        
+    
+        var popup_ec8fe80e359f7f66bdfe1fe4f12e2493 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0af5eef443efd05f8565e2279200f755 = $(`<div id="html_0af5eef443efd05f8565e2279200f755" style="width: 100.0%; height: 100.0%;">Supermarket Chinees-Indisch Surinaams Afhaalcentrum Jumbo Maanstraat 157, Enschede</div>`)[0];
+                popup_ec8fe80e359f7f66bdfe1fe4f12e2493.setContent(html_0af5eef443efd05f8565e2279200f755);
+            
+        
+
+        marker_0ff214f63b22786d49685e9c55ac0a60.bindPopup(popup_ec8fe80e359f7f66bdfe1fe4f12e2493)
+        ;
+
+        
+    
+    
+            var marker_50ece8687a110c0734dc095b23a55a89 = L.marker(
+                [52.2106389, 6.862465900000001],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_197f58f05403667854afcaef9bd2e983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_50ece8687a110c0734dc095b23a55a89.setIcon(icon_197f58f05403667854afcaef9bd2e983);
+        
+    
+        var popup_bef1ed865462628fc948d8f8d398da2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce57197862f6b2592e98e44880c0ca3e = $(`<div id="html_ce57197862f6b2592e98e44880c0ca3e" style="width: 100.0%; height: 100.0%;">Supermarket M&J Supermarkt Nicolaas Maesstraat 51, Enschede</div>`)[0];
+                popup_bef1ed865462628fc948d8f8d398da2a.setContent(html_ce57197862f6b2592e98e44880c0ca3e);
+            
+        
+
+        marker_50ece8687a110c0734dc095b23a55a89.bindPopup(popup_bef1ed865462628fc948d8f8d398da2a)
+        ;
+
+        
+    
+    
+            var marker_f36df8255fa12586bba0933450bb63fa = L.marker(
+                [52.2436598, 6.8514696],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_3cb2441ae1b7732061bf2d2aef17eedf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f36df8255fa12586bba0933450bb63fa.setIcon(icon_3cb2441ae1b7732061bf2d2aef17eedf);
+        
+    
+        var popup_23a0f87828d3488a1674638083a2f1ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e36566dec44a033b87f7affb0bea05 = $(`<div id="html_96e36566dec44a033b87f7affb0bea05" style="width: 100.0%; height: 100.0%;">Supermarket Coop Vandaag De Hems 16-90, Enschede</div>`)[0];
+                popup_23a0f87828d3488a1674638083a2f1ca.setContent(html_96e36566dec44a033b87f7affb0bea05);
+            
+        
+
+        marker_f36df8255fa12586bba0933450bb63fa.bindPopup(popup_23a0f87828d3488a1674638083a2f1ca)
+        ;
+
+        
+    
+    
+            var marker_dae5eb45cf3320b937c2508a5a30be56 = L.marker(
+                [52.2168453, 6.8991433],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a65a6887b00e4ff6e61b5063c9d9aaed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dae5eb45cf3320b937c2508a5a30be56.setIcon(icon_a65a6887b00e4ff6e61b5063c9d9aaed);
+        
+    
+        var popup_5e46d6e725d41116c767aa24efea93de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dfe094f75c0dc6449792dc68de2e6d8 = $(`<div id="html_5dfe094f75c0dc6449792dc68de2e6d8" style="width: 100.0%; height: 100.0%;">Supermarket AH H.J. van Heekplein Hendrik Jan van Heekplein 63, Enschede</div>`)[0];
+                popup_5e46d6e725d41116c767aa24efea93de.setContent(html_5dfe094f75c0dc6449792dc68de2e6d8);
+            
+        
+
+        marker_dae5eb45cf3320b937c2508a5a30be56.bindPopup(popup_5e46d6e725d41116c767aa24efea93de)
+        ;
+
+        
+    
+    
+            var marker_ad2196b9239d4e1a7266de85517115a1 = L.marker(
+                [52.2121874, 6.8626554],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_303c37acc6a5d477652c74805d716c59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ad2196b9239d4e1a7266de85517115a1.setIcon(icon_303c37acc6a5d477652c74805d716c59);
+        
+    
+        var popup_934455a9f9dcc16a64b7384cbdbdcd2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de7362d5ac3790ef77a0e8cf94b25dc8 = $(`<div id="html_de7362d5ac3790ef77a0e8cf94b25dc8" style="width: 100.0%; height: 100.0%;">Supermarket ALDI Jan Vermeerstraat 3, Enschede</div>`)[0];
+                popup_934455a9f9dcc16a64b7384cbdbdcd2c.setContent(html_de7362d5ac3790ef77a0e8cf94b25dc8);
+            
+        
+
+        marker_ad2196b9239d4e1a7266de85517115a1.bindPopup(popup_934455a9f9dcc16a64b7384cbdbdcd2c)
+        ;
+
+        
+    
+    
+            var marker_84e351f0b95a14e7b94ded081af3a5bf = L.marker(
+                [52.2242926, 6.911092300000001],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a6be338f9d3253672803f3b898d1ad7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_84e351f0b95a14e7b94ded081af3a5bf.setIcon(icon_a6be338f9d3253672803f3b898d1ad7b);
+        
+    
+        var popup_1c6b1b8d90b8fea549b12de60ae7c6a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ab8389ba9bfd3dfaa1d10b5f4ff7da8 = $(`<div id="html_3ab8389ba9bfd3dfaa1d10b5f4ff7da8" style="width: 100.0%; height: 100.0%;">Supermarket ALDI Lage Bothofstraat 181, Enschede</div>`)[0];
+                popup_1c6b1b8d90b8fea549b12de60ae7c6a8.setContent(html_3ab8389ba9bfd3dfaa1d10b5f4ff7da8);
+            
+        
+
+        marker_84e351f0b95a14e7b94ded081af3a5bf.bindPopup(popup_1c6b1b8d90b8fea549b12de60ae7c6a8)
+        ;
+
+        
+    
+    
+            var marker_2d2dfca8eb5aa57764a20aae1aa14b4d = L.marker(
+                [52.2195615, 6.9270488],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_723bdede0dbb817296aeec60282fc0a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2d2dfca8eb5aa57764a20aae1aa14b4d.setIcon(icon_723bdede0dbb817296aeec60282fc0a6);
+        
+    
+        var popup_a5db5eaaf9eddbf954dd183dc303b6e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_823ec09217ab6e9ea5ede865403db29d = $(`<div id="html_823ec09217ab6e9ea5ede865403db29d" style="width: 100.0%; height: 100.0%;">Supermarket Aldi Enschede Noord Esmarkerrondweg 421-15, Enschede</div>`)[0];
+                popup_a5db5eaaf9eddbf954dd183dc303b6e3.setContent(html_823ec09217ab6e9ea5ede865403db29d);
+            
+        
+
+        marker_2d2dfca8eb5aa57764a20aae1aa14b4d.bindPopup(popup_a5db5eaaf9eddbf954dd183dc303b6e3)
+        ;
+
+        
+    
+    
+            var marker_e6910939de90beec923e174201e03d69 = L.marker(
+                [52.19304649999999, 6.9015312],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_3db0aa7b66919d3a45f754b25f6288e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e6910939de90beec923e174201e03d69.setIcon(icon_3db0aa7b66919d3a45f754b25f6288e9);
+        
+    
+        var popup_ce33566fb87499aece78c513fa649fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49d8feadb8d3a7f9517a56568f28ac3f = $(`<div id="html_49d8feadb8d3a7f9517a56568f28ac3f" style="width: 100.0%; height: 100.0%;">Supermarket ALDI Veldhoflanden 5E, Enschede</div>`)[0];
+                popup_ce33566fb87499aece78c513fa649fc7.setContent(html_49d8feadb8d3a7f9517a56568f28ac3f);
+            
+        
+
+        marker_e6910939de90beec923e174201e03d69.bindPopup(popup_ce33566fb87499aece78c513fa649fc7)
+        ;
+
+        
+    
+    
+            var marker_1370dcc5d313e316fd792d97588872aa = L.marker(
+                [52.1936662, 6.9007779],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_055df8e52fa762adecb0731d8ac06080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1370dcc5d313e316fd792d97588872aa.setIcon(icon_055df8e52fa762adecb0731d8ac06080);
+        
+    
+        var popup_344c713b60dfde4a399e3cb5f58a89b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_592b091fccaa4f38e796301e05d5e3bb = $(`<div id="html_592b091fccaa4f38e796301e05d5e3bb" style="width: 100.0%; height: 100.0%;">Supermarket AH Veldhoflanden Veldhoflanden 2, Enschede</div>`)[0];
+                popup_344c713b60dfde4a399e3cb5f58a89b2.setContent(html_592b091fccaa4f38e796301e05d5e3bb);
+            
+        
+
+        marker_1370dcc5d313e316fd792d97588872aa.bindPopup(popup_344c713b60dfde4a399e3cb5f58a89b2)
+        ;
+
+        
+    
+    
+            var marker_7b8a489e18cd2ed41078a7a6896a55e0 = L.marker(
+                [52.2123107, 6.8652548],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_4caedf0e477eb2d2184a8e4a6540e48b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7b8a489e18cd2ed41078a7a6896a55e0.setIcon(icon_4caedf0e477eb2d2184a8e4a6540e48b);
+        
+    
+        var popup_8746ad2a568069aedd75949b189f3f94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_958cafdda73313ed22ac9e674278502c = $(`<div id="html_958cafdda73313ed22ac9e674278502c" style="width: 100.0%; height: 100.0%;">Supermarket Dirk van den Broek Oogstplein 26, Enschede</div>`)[0];
+                popup_8746ad2a568069aedd75949b189f3f94.setContent(html_958cafdda73313ed22ac9e674278502c);
+            
+        
+
+        marker_7b8a489e18cd2ed41078a7a6896a55e0.bindPopup(popup_8746ad2a568069aedd75949b189f3f94)
+        ;
+
+        
+    
+    
+            var marker_a9c7db04502e17e4be50fb8a03dc575c = L.marker(
+                [52.2129586, 6.8619506],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_144d561aeaaa159a67628fa9469592cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a9c7db04502e17e4be50fb8a03dc575c.setIcon(icon_144d561aeaaa159a67628fa9469592cf);
+        
+    
+        var popup_67d3ee67f2ac09583027db2e873ea462 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4d6156c09354e997d110ed58b31411b = $(`<div id="html_b4d6156c09354e997d110ed58b31411b" style="width: 100.0%; height: 100.0%;">Supermarket AH Wethouder Nijhuisstraat Wethouder Nijhuisstraat 164, Enschede</div>`)[0];
+                popup_67d3ee67f2ac09583027db2e873ea462.setContent(html_b4d6156c09354e997d110ed58b31411b);
+            
+        
+
+        marker_a9c7db04502e17e4be50fb8a03dc575c.bindPopup(popup_67d3ee67f2ac09583027db2e873ea462)
+        ;
+
+        
+    
+    
+            var marker_7115bed037a7f67a1761711498cc956f = L.marker(
+                [52.2199991, 6.904420600000001],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_62de7b5acf1a91577d3209a3b8ff2f14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7115bed037a7f67a1761711498cc956f.setIcon(icon_62de7b5acf1a91577d3209a3b8ff2f14);
+        
+    
+        var popup_a54d639a9664d5fab98d484ed60fdde5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6c9042d9312ccc08faae08927ee45fb = $(`<div id="html_e6c9042d9312ccc08faae08927ee45fb" style="width: 100.0%; height: 100.0%;">Supermarket Supermarket ADA Import Export Lipperkerkstraat 4, Enschede</div>`)[0];
+                popup_a54d639a9664d5fab98d484ed60fdde5.setContent(html_e6c9042d9312ccc08faae08927ee45fb);
+            
+        
+
+        marker_7115bed037a7f67a1761711498cc956f.bindPopup(popup_a54d639a9664d5fab98d484ed60fdde5)
+        ;
+
+        
+    
+    
+            var marker_ab514597259b67f65f4f690e2764cc1b = L.marker(
+                [52.2248454, 6.881292699999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ae04e7731e78f9650003105f946fc9fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ab514597259b67f65f4f690e2764cc1b.setIcon(icon_ae04e7731e78f9650003105f946fc9fe);
+        
+    
+        var popup_74c57ffb0762819ad72420953af43ab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e09fe772f559fad34d6337ed28e3e32 = $(`<div id="html_4e09fe772f559fad34d6337ed28e3e32" style="width: 100.0%; height: 100.0%;">Supermarket Action Schuttersveld 1f, F, Enschede</div>`)[0];
+                popup_74c57ffb0762819ad72420953af43ab9.setContent(html_4e09fe772f559fad34d6337ed28e3e32);
+            
+        
+
+        marker_ab514597259b67f65f4f690e2764cc1b.bindPopup(popup_74c57ffb0762819ad72420953af43ab9)
+        ;
+
+        
+    
+    
+            var marker_52dbda23c4d709774d8b623401cc0cf8 = L.marker(
+                [52.2038715, 6.8928805],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_de9570d1af532d70b99887ef1bfcc32f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_52dbda23c4d709774d8b623401cc0cf8.setIcon(icon_de9570d1af532d70b99887ef1bfcc32f);
+        
+    
+        var popup_be0cfe11ea7102bb619c3c329fbf5bba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_075f5a3b30f6642e5832f6b728afa6dd = $(`<div id="html_075f5a3b30f6642e5832f6b728afa6dd" style="width: 100.0%; height: 100.0%;">Supermarket Nettorama Spaansland 15-2, Enschede</div>`)[0];
+                popup_be0cfe11ea7102bb619c3c329fbf5bba.setContent(html_075f5a3b30f6642e5832f6b728afa6dd);
+            
+        
+
+        marker_52dbda23c4d709774d8b623401cc0cf8.bindPopup(popup_be0cfe11ea7102bb619c3c329fbf5bba)
+        ;
+
+        
+    
+    
+            var marker_fbbd5f1fa474d1a95c0f4b6184283e2b = L.marker(
+                [52.2391667, 6.894722199999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ac5b634f9296ab0f2f036b2854fd0937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fbbd5f1fa474d1a95c0f4b6184283e2b.setIcon(icon_ac5b634f9296ab0f2f036b2854fd0937);
+        
+    
+        var popup_8ea2e485e5db7689295d98be7754b5f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c48e31bbe8fb53f7bd152506cb5d19c8 = $(`<div id="html_c48e31bbe8fb53f7bd152506cb5d19c8" style="width: 100.0%; height: 100.0%;">Supermarket AH Rijnstraat Rijnstraat 20, Enschede</div>`)[0];
+                popup_8ea2e485e5db7689295d98be7754b5f3.setContent(html_c48e31bbe8fb53f7bd152506cb5d19c8);
+            
+        
+
+        marker_fbbd5f1fa474d1a95c0f4b6184283e2b.bindPopup(popup_8ea2e485e5db7689295d98be7754b5f3)
+        ;
+
+        
+    
+    
+            var marker_ef5bb4d8e044c26836228ac4c3781d47 = L.marker(
+                [52.2626858, 6.820494],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_031dfb6ae4ea55bbba78f774bb0ea5d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ef5bb4d8e044c26836228ac4c3781d47.setIcon(icon_031dfb6ae4ea55bbba78f774bb0ea5d3);
+        
+    
+        var popup_da8785e2424c360f1460ab736fa1a0b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1194f53d8d0e96ff7aa6d872c5d22d8 = $(`<div id="html_d1194f53d8d0e96ff7aa6d872c5d22d8" style="width: 100.0%; height: 100.0%;">Supermarket AH Willem de Merodestraat Willem de Merodestraat 10, Hengelo</div>`)[0];
+                popup_da8785e2424c360f1460ab736fa1a0b0.setContent(html_d1194f53d8d0e96ff7aa6d872c5d22d8);
+            
+        
+
+        marker_ef5bb4d8e044c26836228ac4c3781d47.bindPopup(popup_da8785e2424c360f1460ab736fa1a0b0)
+        ;
+
+        
+    
+    
+            var marker_10cfac7907399320c650b2c24ea86af9 = L.marker(
+                [52.1922092, 6.8783441],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_2c3cbcf7b82ef6c7447d842933606eca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_10cfac7907399320c650b2c24ea86af9.setIcon(icon_2c3cbcf7b82ef6c7447d842933606eca);
+        
+    
+        var popup_b287382ced8da30f182e8a863b814b6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21688d1a9c9163a8cedd888f17cee2a7 = $(`<div id="html_21688d1a9c9163a8cedd888f17cee2a7" style="width: 100.0%; height: 100.0%;">Supermarket AH Enschede Zuid Wesseler-Nering 20B, Enschede</div>`)[0];
+                popup_b287382ced8da30f182e8a863b814b6a.setContent(html_21688d1a9c9163a8cedd888f17cee2a7);
+            
+        
+
+        marker_10cfac7907399320c650b2c24ea86af9.bindPopup(popup_b287382ced8da30f182e8a863b814b6a)
+        ;
+
+        
+    
+    
+            var marker_fccac133b188183230978a7132741482 = L.marker(
+                [52.1939381, 6.8557858],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_585b5f26722b24f5f41f9c216c35f39e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fccac133b188183230978a7132741482.setIcon(icon_585b5f26722b24f5f41f9c216c35f39e);
+        
+    
+        var popup_2bcdc1ed780c5aa69b48dd3bb126e1df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_661f24cad2c1096bd228fdd22bcd0756 = $(`<div id="html_661f24cad2c1096bd228fdd22bcd0756" style="width: 100.0%; height: 100.0%;">Supermarket AH Kevelhamhoek Kevelhamhoek 71, Enschede</div>`)[0];
+                popup_2bcdc1ed780c5aa69b48dd3bb126e1df.setContent(html_661f24cad2c1096bd228fdd22bcd0756);
+            
+        
+
+        marker_fccac133b188183230978a7132741482.bindPopup(popup_2bcdc1ed780c5aa69b48dd3bb126e1df)
+        ;
+
+        
+    
+    
+            var marker_b242ccd1363c452cbb129675c74642e5 = L.marker(
+                [52.2222323, 6.8902084],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_d5160b01040ddf36b2d266b8feff1fbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b242ccd1363c452cbb129675c74642e5.setIcon(icon_d5160b01040ddf36b2d266b8feff1fbc);
+        
+    
+        var popup_94a986fe63671d101febeb2614e0e02d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50b7776c2b30fd5ac977fd664c060c84 = $(`<div id="html_50b7776c2b30fd5ac977fd664c060c84" style="width: 100.0%; height: 100.0%;">Supermarket TOGO AH Stationsplein Stationsplein 33, Enschede</div>`)[0];
+                popup_94a986fe63671d101febeb2614e0e02d.setContent(html_50b7776c2b30fd5ac977fd664c060c84);
+            
+        
+
+        marker_b242ccd1363c452cbb129675c74642e5.bindPopup(popup_94a986fe63671d101febeb2614e0e02d)
+        ;
+
+        
+    
+    
+            var marker_30d1648ef3e47fbd2eaa62df29c11edf = L.marker(
+                [52.23922839999999, 6.8948955],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_50b6e52f6f585e8e2a3aab8aa3dc4831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_30d1648ef3e47fbd2eaa62df29c11edf.setIcon(icon_50b6e52f6f585e8e2a3aab8aa3dc4831);
+        
+    
+        var popup_a988929b621ab74b1347656fb9f0bfa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40c787252970032d6cf0a1c4464ae870 = $(`<div id="html_40c787252970032d6cf0a1c4464ae870" style="width: 100.0%; height: 100.0%;">Supermarket Deppenbroek Rijnstraat 20, Enschede</div>`)[0];
+                popup_a988929b621ab74b1347656fb9f0bfa9.setContent(html_40c787252970032d6cf0a1c4464ae870);
+            
+        
+
+        marker_30d1648ef3e47fbd2eaa62df29c11edf.bindPopup(popup_a988929b621ab74b1347656fb9f0bfa9)
+        ;
+
+        
+    
+    
+            var marker_a5fd2b1887bf0e74f711431876a30d5d = L.marker(
+                [52.2392737, 6.8924537],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a520d8703acd2d17da66adbb3696f755 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a5fd2b1887bf0e74f711431876a30d5d.setIcon(icon_a520d8703acd2d17da66adbb3696f755);
+        
+    
+        var popup_feaaa8f6e8b02f4a9d41147616d95bcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ded1ae67e362fe6049be038466d8dbf = $(`<div id="html_9ded1ae67e362fe6049be038466d8dbf" style="width: 100.0%; height: 100.0%;">Supermarket Dirk van den Broek Rijnstraat 84, Enschede</div>`)[0];
+                popup_feaaa8f6e8b02f4a9d41147616d95bcd.setContent(html_9ded1ae67e362fe6049be038466d8dbf);
+            
+        
+
+        marker_a5fd2b1887bf0e74f711431876a30d5d.bindPopup(popup_feaaa8f6e8b02f4a9d41147616d95bcd)
+        ;
+
+        
+    
+    
+            var marker_12ab1429cf4b0cd0e6c883ee284b1c2e = L.marker(
+                [52.219781, 6.967314],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_008605107434ad80416d578aa4f078a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_12ab1429cf4b0cd0e6c883ee284b1c2e.setIcon(icon_008605107434ad80416d578aa4f078a9);
+        
+    
+        var popup_ee0b1ea2e6317cf96e9654bd2f367cd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cab4dc83908d4b558581b1e7b53eff3 = $(`<div id="html_6cab4dc83908d4b558581b1e7b53eff3" style="width: 100.0%; height: 100.0%;">Supermarket Drukkerij Dirk van Dijk V.O.F. Bultsweg 127, Enschede</div>`)[0];
+                popup_ee0b1ea2e6317cf96e9654bd2f367cd8.setContent(html_6cab4dc83908d4b558581b1e7b53eff3);
+            
+        
+
+        marker_12ab1429cf4b0cd0e6c883ee284b1c2e.bindPopup(popup_ee0b1ea2e6317cf96e9654bd2f367cd8)
+        ;
+
+        
+    
+    
+            var marker_80df81279597ea36373c98c64ed7d66a = L.marker(
+                [52.2243237, 6.958698399999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_237ddbaaa4032870b096132cd5d7aafc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_80df81279597ea36373c98c64ed7d66a.setIcon(icon_237ddbaaa4032870b096132cd5d7aafc);
+        
+    
+        var popup_2e120f5974318121410f622ac1396545 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55c93bb6dd95ce66e1b24df3f7f5a029 = $(`<div id="html_55c93bb6dd95ce66e1b24df3f7f5a029" style="width: 100.0%; height: 100.0%;">Supermarket Dirk Diepeveen isolatiebedrijf en brandwerende afwerkingen Najaarsweg 11 A, Enschede</div>`)[0];
+                popup_2e120f5974318121410f622ac1396545.setContent(html_55c93bb6dd95ce66e1b24df3f7f5a029);
+            
+        
+
+        marker_80df81279597ea36373c98c64ed7d66a.bindPopup(popup_2e120f5974318121410f622ac1396545)
+        ;
+
+        
+    
+    
+            var marker_d05a36e03a1712fc636e60746d03a8e3 = L.marker(
+                [52.2123309, 6.865348099999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_493a5bb8fe7ec59567ea4e0c128d19cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d05a36e03a1712fc636e60746d03a8e3.setIcon(icon_493a5bb8fe7ec59567ea4e0c128d19cf);
+        
+    
+        var popup_d182fb78d377f22623772ce9a0290357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75c6a4390c65b2de6cc7a90adf7ba83b = $(`<div id="html_75c6a4390c65b2de6cc7a90adf7ba83b" style="width: 100.0%; height: 100.0%;">Supermarket Detailconsult Supermarkten B.V. Oogstplein 26, Enschede</div>`)[0];
+                popup_d182fb78d377f22623772ce9a0290357.setContent(html_75c6a4390c65b2de6cc7a90adf7ba83b);
+            
+        
+
+        marker_d05a36e03a1712fc636e60746d03a8e3.bindPopup(popup_d182fb78d377f22623772ce9a0290357)
+        ;
+
+        
+    
+    
+            var marker_7ad9a30a50ea6b8576956bad85428f96 = L.marker(
+                [52.22409, 6.945495999999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_e16d5e6c38c540ebcd70a252c5118667 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7ad9a30a50ea6b8576956bad85428f96.setIcon(icon_e16d5e6c38c540ebcd70a252c5118667);
+        
+    
+        var popup_a4ad7d099a9d702859fce156b334ff1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9f395cb83ef3fccbf9d308552a7ea22 = $(`<div id="html_e9f395cb83ef3fccbf9d308552a7ea22" style="width: 100.0%; height: 100.0%;">Supermarket Nijhuis en Appels Schilderwerken BV Dirk Zomerweg 196, Enschede</div>`)[0];
+                popup_a4ad7d099a9d702859fce156b334ff1b.setContent(html_e9f395cb83ef3fccbf9d308552a7ea22);
+            
+        
+
+        marker_7ad9a30a50ea6b8576956bad85428f96.bindPopup(popup_a4ad7d099a9d702859fce156b334ff1b)
+        ;
+
+        
+    
+    
+            var marker_21d0f4354fc9dc0408ab21131f1601b0 = L.marker(
+                [52.2392894, 6.8935767],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a968726a3bdd2ee37979e0f422ddbba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_21d0f4354fc9dc0408ab21131f1601b0.setIcon(icon_a968726a3bdd2ee37979e0f422ddbba9);
+        
+    
+        var popup_64ed288424e09f4647885cadcf2da1a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a2f64f0548259a3631a579491939f8 = $(`<div id="html_05a2f64f0548259a3631a579491939f8" style="width: 100.0%; height: 100.0%;">Supermarket Kruidvat Rijnstraat 52-58, Enschede</div>`)[0];
+                popup_64ed288424e09f4647885cadcf2da1a4.setContent(html_05a2f64f0548259a3631a579491939f8);
+            
+        
+
+        marker_21d0f4354fc9dc0408ab21131f1601b0.bindPopup(popup_64ed288424e09f4647885cadcf2da1a4)
+        ;
+
+        
+    
+    
+            var marker_fad3f16371be725c1138f25ef1cc6ccf = L.marker(
+                [52.2392225, 6.8931213],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_e136840c39a02ea22bef8518d224d08a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fad3f16371be725c1138f25ef1cc6ccf.setIcon(icon_e136840c39a02ea22bef8518d224d08a);
+        
+    
+        var popup_e63160f1fdfd7388d640c1211976bdc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9f9eaf2a967384b99b6980a5c904507 = $(`<div id="html_a9f9eaf2a967384b99b6980a5c904507" style="width: 100.0%; height: 100.0%;">Supermarket Zuivelhoeve Deppenbroek Rijnstraat 62b, Enschede</div>`)[0];
+                popup_e63160f1fdfd7388d640c1211976bdc9.setContent(html_a9f9eaf2a967384b99b6980a5c904507);
+            
+        
+
+        marker_fad3f16371be725c1138f25ef1cc6ccf.bindPopup(popup_e63160f1fdfd7388d640c1211976bdc9)
+        ;
+
+        
+    
+    
+            var marker_f792aca93011c73bc9f9e8af3f65b70e = L.marker(
+                [52.2394557, 6.892996699999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_853ee419879f7655cfc0eaeb8c1909fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f792aca93011c73bc9f9e8af3f65b70e.setIcon(icon_853ee419879f7655cfc0eaeb8c1909fc);
+        
+    
+        var popup_ba2815d9e8516e97bed3ef00b0f2ef7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5855c9b01ec64264d0910e96648c37dc = $(`<div id="html_5855c9b01ec64264d0910e96648c37dc" style="width: 100.0%; height: 100.0%;">Supermarket Cigo Kroeze Rijnstraat 64a, Enschede</div>`)[0];
+                popup_ba2815d9e8516e97bed3ef00b0f2ef7a.setContent(html_5855c9b01ec64264d0910e96648c37dc);
+            
+        
+
+        marker_f792aca93011c73bc9f9e8af3f65b70e.bindPopup(popup_ba2815d9e8516e97bed3ef00b0f2ef7a)
+        ;
+
+        
+    
+    
+            var marker_ebec2748c0aa3832a8515c33970f67b7 = L.marker(
+                [52.2390959, 6.892912300000001],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_34323066bf4982ebe3cf3b0884063823 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ebec2748c0aa3832a8515c33970f67b7.setIcon(icon_34323066bf4982ebe3cf3b0884063823);
+        
+    
+        var popup_6cdcdfbb715a3c576d60641e92652e13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ba459a631c2be0926657370f580d4e6 = $(`<div id="html_2ba459a631c2be0926657370f580d4e6" style="width: 100.0%; height: 100.0%;">Supermarket Blokker Enschede Rijnstraat Rijnstraat 62, Enschede</div>`)[0];
+                popup_6cdcdfbb715a3c576d60641e92652e13.setContent(html_2ba459a631c2be0926657370f580d4e6);
+            
+        
+
+        marker_ebec2748c0aa3832a8515c33970f67b7.bindPopup(popup_6cdcdfbb715a3c576d60641e92652e13)
+        ;
+
+        
+    
+    
+            var marker_7f787138ed6385b1f81a54ba41588bd4 = L.marker(
+                [52.2249388, 6.9429839],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_aaac2fa982dd3bcc92100cff0e77ddb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7f787138ed6385b1f81a54ba41588bd4.setIcon(icon_aaac2fa982dd3bcc92100cff0e77ddb0);
+        
+    
+        var popup_d52dbb0128e0893d627ae89406dbcbd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3e8f5ae7ec802f8d0655d16d2c3b2d5 = $(`<div id="html_c3e8f5ae7ec802f8d0655d16d2c3b2d5" style="width: 100.0%; height: 100.0%;">Supermarket ABS Auto Repair Bösing Midzomerweg 7, Enschede</div>`)[0];
+                popup_d52dbb0128e0893d627ae89406dbcbd6.setContent(html_c3e8f5ae7ec802f8d0655d16d2c3b2d5);
+            
+        
+
+        marker_7f787138ed6385b1f81a54ba41588bd4.bindPopup(popup_d52dbb0128e0893d627ae89406dbcbd6)
+        ;
+
+        
+    
+    
+            var marker_8835cb65f8baf3bba58a3314c16c57ee = L.marker(
+                [52.220901, 6.893631],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_2ea7d44d25d4996668eeea4862524fd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8835cb65f8baf3bba58a3314c16c57ee.setIcon(icon_2ea7d44d25d4996668eeea4862524fd7);
+        
+    
+        var popup_fb1a83be7a8f842a890a6804c777dd8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f4be3abc7dbd3169787b1f9e5edb58c = $(`<div id="html_0f4be3abc7dbd3169787b1f9e5edb58c" style="width: 100.0%; height: 100.0%;">Supermarket SPAR City Store Marktstraat 13, Enschede</div>`)[0];
+                popup_fb1a83be7a8f842a890a6804c777dd8f.setContent(html_0f4be3abc7dbd3169787b1f9e5edb58c);
+            
+        
+
+        marker_8835cb65f8baf3bba58a3314c16c57ee.bindPopup(popup_fb1a83be7a8f842a890a6804c777dd8f)
+        ;
+
+        
+    
+    
+            var marker_c2a62e1dbf5feeea7edd0ef051d8b428 = L.marker(
+                [52.2493843, 6.912335499999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_2215587ee12825897cbdb493e4ccc334 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c2a62e1dbf5feeea7edd0ef051d8b428.setIcon(icon_2215587ee12825897cbdb493e4ccc334);
+        
+    
+        var popup_625b275f12ff2ec9250c691eab457f77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4feded7334c08a430b1c0b28acbc5a93 = $(`<div id="html_4feded7334c08a430b1c0b28acbc5a93" style="width: 100.0%; height: 100.0%;">Supermarket SPAR Lonneker Scholten Reimerstraat 53, Enschede</div>`)[0];
+                popup_625b275f12ff2ec9250c691eab457f77.setContent(html_4feded7334c08a430b1c0b28acbc5a93);
+            
+        
+
+        marker_c2a62e1dbf5feeea7edd0ef051d8b428.bindPopup(popup_625b275f12ff2ec9250c691eab457f77)
+        ;
+
+        
+    
+    
+            var marker_0563b66da25376c24de2943c399bc212 = L.marker(
+                [52.20697209999999, 6.867026000000001],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_7cbf3fc8265c4fe5666856d77e1075be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0563b66da25376c24de2943c399bc212.setIcon(icon_7cbf3fc8265c4fe5666856d77e1075be);
+        
+    
+        var popup_5e041dcdd6ffc7f0c35dd1f905c16abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08f7556c39ba827290c3eef5f2c09721 = $(`<div id="html_08f7556c39ba827290c3eef5f2c09721" style="width: 100.0%; height: 100.0%;">Supermarket SPAR express Enschede Haakberger Haaksbergerstraat 602, Enschede</div>`)[0];
+                popup_5e041dcdd6ffc7f0c35dd1f905c16abf.setContent(html_08f7556c39ba827290c3eef5f2c09721);
+            
+        
+
+        marker_0563b66da25376c24de2943c399bc212.bindPopup(popup_5e041dcdd6ffc7f0c35dd1f905c16abf)
+        ;
+
+        
+    
+    
+            var marker_23e27c9945e3946da28291a798e7b06a = L.marker(
+                [52.2207287, 6.8856883],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_d147738a409a51442b8ee8b64df8c464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_23e27c9945e3946da28291a798e7b06a.setIcon(icon_d147738a409a51442b8ee8b64df8c464);
+        
+    
+        var popup_5ccbd833d0c0d43babafc56d8e6ae48e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1dee1f97767fcfe8ab1b146db77b273 = $(`<div id="html_c1dee1f97767fcfe8ab1b146db77b273" style="width: 100.0%; height: 100.0%;">Supermarket SPAR university SaxEns M. H. Tromplaan 28, Enschede</div>`)[0];
+                popup_5ccbd833d0c0d43babafc56d8e6ae48e.setContent(html_c1dee1f97767fcfe8ab1b146db77b273);
+            
+        
+
+        marker_23e27c9945e3946da28291a798e7b06a.bindPopup(popup_5ccbd833d0c0d43babafc56d8e6ae48e)
+        ;
+
+        
+    
+    
+            var marker_f0eb89a6c13595b76c74eed87306e1ea = L.marker(
+                [52.21965489999999, 6.8981127],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a9ecc2e57388a2e45b23d288e27e424c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f0eb89a6c13595b76c74eed87306e1ea.setIcon(icon_a9ecc2e57388a2e45b23d288e27e424c);
+        
+    
+        var popup_846e53eaa70123d3dcb165a2e9d77a1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a26606cf6a1343ca4164ce6b445718d = $(`<div id="html_0a26606cf6a1343ca4164ce6b445718d" style="width: 100.0%; height: 100.0%;">Supermarket Bakker Bart Langestraat 14, Enschede</div>`)[0];
+                popup_846e53eaa70123d3dcb165a2e9d77a1f.setContent(html_0a26606cf6a1343ca4164ce6b445718d);
+            
+        
+
+        marker_f0eb89a6c13595b76c74eed87306e1ea.bindPopup(popup_846e53eaa70123d3dcb165a2e9d77a1f)
+        ;
+
+        
+    
+    
+            var marker_4df144021c8ca0366a1d56666814d89f = L.marker(
+                [52.2194886, 6.894218],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_29ec519a6a885f865d7c6deb7afcd07b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4df144021c8ca0366a1d56666814d89f.setIcon(icon_29ec519a6a885f865d7c6deb7afcd07b);
+        
+    
+        var popup_5201023230d4225c4b502d9870013db9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_898c89690142988002a507c1031b1317 = $(`<div id="html_898c89690142988002a507c1031b1317" style="width: 100.0%; height: 100.0%;">Supermarket Douwe Egberts Café Pijpenstraat 4, Enschede</div>`)[0];
+                popup_5201023230d4225c4b502d9870013db9.setContent(html_898c89690142988002a507c1031b1317);
+            
+        
+
+        marker_4df144021c8ca0366a1d56666814d89f.bindPopup(popup_5201023230d4225c4b502d9870013db9)
+        ;
+
+        
+    
+    
+            var marker_5117ad6003add65b5cfd4af99b9f450c = L.marker(
+                [52.214392, 6.896128699999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ad927816a6888b3e279c6eeed09e696a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5117ad6003add65b5cfd4af99b9f450c.setIcon(icon_ad927816a6888b3e279c6eeed09e696a);
+        
+    
+        var popup_d019bde52be74249272e98e54c13c668 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0725a06ddb18a35da8e9db4b29ba62ff = $(`<div id="html_0725a06ddb18a35da8e9db4b29ba62ff" style="width: 100.0%; height: 100.0%;">Supermarket Spare Rib Express Enschede Kuipersdijk 66, Enschede</div>`)[0];
+                popup_d019bde52be74249272e98e54c13c668.setContent(html_0725a06ddb18a35da8e9db4b29ba62ff);
+            
+        
+
+        marker_5117ad6003add65b5cfd4af99b9f450c.bindPopup(popup_d019bde52be74249272e98e54c13c668)
+        ;
+
+        
+    
+    
+            var marker_32e2a1847c893c5998ebf9ca984b63cf = L.marker(
+                [52.21661599999999, 6.946478],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_004d268330f0f19b7f3c4c2fab83677a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_32e2a1847c893c5998ebf9ca984b63cf.setIcon(icon_004d268330f0f19b7f3c4c2fab83677a);
+        
+    
+        var popup_6e09364147aa5ca5d21fb63258ea8c9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af351dad39c7814924623146fd43150b = $(`<div id="html_af351dad39c7814924623146fd43150b" style="width: 100.0%; height: 100.0%;">Supermarket Mister Pancake Gronausestraat 710B, Enschede</div>`)[0];
+                popup_6e09364147aa5ca5d21fb63258ea8c9a.setContent(html_af351dad39c7814924623146fd43150b);
+            
+        
+
+        marker_32e2a1847c893c5998ebf9ca984b63cf.bindPopup(popup_6e09364147aa5ca5d21fb63258ea8c9a)
+        ;
+
+        
+    
+    
+            var marker_754954764502b49bd92b52f0aed7f5a8 = L.marker(
+                [52.2189828, 6.893942699999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_0d4b375dd1965fc2076471ab8559164c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_754954764502b49bd92b52f0aed7f5a8.setIcon(icon_0d4b375dd1965fc2076471ab8559164c);
+        
+    
+        var popup_05d77385cc9f6cab37d4f9abea3324a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c33bcb87e3fed111ad1b2f03fa135c5b = $(`<div id="html_c33bcb87e3fed111ad1b2f03fa135c5b" style="width: 100.0%; height: 100.0%;">Small Store Toko Het Oosten Zuiderhagen 50, Enschede</div>`)[0];
+                popup_05d77385cc9f6cab37d4f9abea3324a4.setContent(html_c33bcb87e3fed111ad1b2f03fa135c5b);
+            
+        
+
+        marker_754954764502b49bd92b52f0aed7f5a8.bindPopup(popup_05d77385cc9f6cab37d4f9abea3324a4)
+        ;
+
+        
+    
+    
+            var marker_ebe6d1422dbe3e9c8773245536f7e96b = L.marker(
+                [52.2036601, 6.8925971],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_7d020f128260a08dbe061cd34f890e11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ebe6d1422dbe3e9c8773245536f7e96b.setIcon(icon_7d020f128260a08dbe061cd34f890e11);
+        
+    
+        var popup_712835ac533ec0231bda7f4140d3e4d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a090766fec6678587b6857ff8bf446d9 = $(`<div id="html_a090766fec6678587b6857ff8bf446d9" style="width: 100.0%; height: 100.0%;">Small Store Sam's Toko Spaansland 15, Enschede</div>`)[0];
+                popup_712835ac533ec0231bda7f4140d3e4d4.setContent(html_a090766fec6678587b6857ff8bf446d9);
+            
+        
+
+        marker_ebe6d1422dbe3e9c8773245536f7e96b.bindPopup(popup_712835ac533ec0231bda7f4140d3e4d4)
+        ;
+
+        
+    
+    
+            var marker_3c49a395fd974c2e72a547e6d6f2f9ea = L.marker(
+                [52.19155550000001, 6.878836199999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_f43357637eda1a28393528755762dd27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c49a395fd974c2e72a547e6d6f2f9ea.setIcon(icon_f43357637eda1a28393528755762dd27);
+        
+    
+        var popup_98d3012b34fe8d6dc243384da00c8d4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0966700ebdf5853ce032962ddd958817 = $(`<div id="html_0966700ebdf5853ce032962ddd958817" style="width: 100.0%; height: 100.0%;">Small Store Sam's Toko winkelcentrum zuid Wesseler-Nering 21, Enschede</div>`)[0];
+                popup_98d3012b34fe8d6dc243384da00c8d4e.setContent(html_0966700ebdf5853ce032962ddd958817);
+            
+        
+
+        marker_3c49a395fd974c2e72a547e6d6f2f9ea.bindPopup(popup_98d3012b34fe8d6dc243384da00c8d4e)
+        ;
+
+        
+    
+    
+            var marker_ad3027e2192db5bf80af0a4a3271aab2 = L.marker(
+                [52.2196373, 6.8939157],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_8ec90e75f4672614ff84af084ca6dbca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad3027e2192db5bf80af0a4a3271aab2.setIcon(icon_8ec90e75f4672614ff84af084ca6dbca);
+        
+    
+        var popup_f143ea36329a0d11a058f27313cbbd29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee78e866103f10e0bd65a2ed9fb80681 = $(`<div id="html_ee78e866103f10e0bd65a2ed9fb80681" style="width: 100.0%; height: 100.0%;">Small Store Toko Switi Zuiderhagen 39, Enschede</div>`)[0];
+                popup_f143ea36329a0d11a058f27313cbbd29.setContent(html_ee78e866103f10e0bd65a2ed9fb80681);
+            
+        
+
+        marker_ad3027e2192db5bf80af0a4a3271aab2.bindPopup(popup_f143ea36329a0d11a058f27313cbbd29)
+        ;
+
+        
+    
+    
+            var marker_0d88ae7635ae573b44d31dfd368d4638 = L.marker(
+                [52.2196796, 6.9016498],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_4877a338d0e641834de136a9221ee231 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d88ae7635ae573b44d31dfd368d4638.setIcon(icon_4877a338d0e641834de136a9221ee231);
+        
+    
+        var popup_4175c0113c1fab7051c0d2d8f4ce5e1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_174ba80b1538d196d5eeafbda38213d9 = $(`<div id="html_174ba80b1538d196d5eeafbda38213d9" style="width: 100.0%; height: 100.0%;">Small Store Peter Hu Asian Supermarket De Klomp 146, Enschede</div>`)[0];
+                popup_4175c0113c1fab7051c0d2d8f4ce5e1d.setContent(html_174ba80b1538d196d5eeafbda38213d9);
+            
+        
+
+        marker_0d88ae7635ae573b44d31dfd368d4638.bindPopup(popup_4175c0113c1fab7051c0d2d8f4ce5e1d)
+        ;
+
+        
+    
+    
+            var marker_7481f12351037bfc51908201f1b60e3a = L.marker(
+                [52.20881, 6.8942504],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_7a8fc7e4a9205e8fb5b74775d217384a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7481f12351037bfc51908201f1b60e3a.setIcon(icon_7a8fc7e4a9205e8fb5b74775d217384a);
+        
+    
+        var popup_6c2dce4576c6bc15d222a8430fe27777 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9ef2519f29457a67d2d240665fd4251 = $(`<div id="html_c9ef2519f29457a67d2d240665fd4251" style="width: 100.0%; height: 100.0%;">Small Store Togo supermarkt en Levensmiddelen Eeftinksweg 8, Enschede</div>`)[0];
+                popup_6c2dce4576c6bc15d222a8430fe27777.setContent(html_c9ef2519f29457a67d2d240665fd4251);
+            
+        
+
+        marker_7481f12351037bfc51908201f1b60e3a.bindPopup(popup_6c2dce4576c6bc15d222a8430fe27777)
+        ;
+
+        
+    
+    
+            var marker_d21777c591948aa7555f1bde67934398 = L.marker(
+                [52.2062482, 6.8794018],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_3dde4e86bdc19eaf5595216a883b597f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d21777c591948aa7555f1bde67934398.setIcon(icon_3dde4e86bdc19eaf5595216a883b597f);
+        
+    
+        var popup_5801a72432ce96662b0d29669cec2e3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1aba8a1d958ff7a54428bb9c090ebdb = $(`<div id="html_f1aba8a1d958ff7a54428bb9c090ebdb" style="width: 100.0%; height: 100.0%;">Small Store Selam Market Boswinkel Burgemeester van Veenlaan 98, Enschede</div>`)[0];
+                popup_5801a72432ce96662b0d29669cec2e3d.setContent(html_f1aba8a1d958ff7a54428bb9c090ebdb);
+            
+        
+
+        marker_d21777c591948aa7555f1bde67934398.bindPopup(popup_5801a72432ce96662b0d29669cec2e3d)
+        ;
+
+        
+    
+    
+            var marker_29fe710679f664274b76905cb65e402c = L.marker(
+                [52.2314452, 6.8929481],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_44fe6341d4e53b6ff425346ffb444ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29fe710679f664274b76905cb65e402c.setIcon(icon_44fe6341d4e53b6ff425346ffb444ada);
+        
+    
+        var popup_40f3c2317ff8629b15ed850e56901c7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_099bad6d31b29fbe88f49e166ce74a8a = $(`<div id="html_099bad6d31b29fbe88f49e166ce74a8a" style="width: 100.0%; height: 100.0%;">Small Store Selam Market Roombeek Roomweg 73, Enschede</div>`)[0];
+                popup_40f3c2317ff8629b15ed850e56901c7e.setContent(html_099bad6d31b29fbe88f49e166ce74a8a);
+            
+        
+
+        marker_29fe710679f664274b76905cb65e402c.bindPopup(popup_40f3c2317ff8629b15ed850e56901c7e)
+        ;
+
+        
+    
+    
+            var marker_6cf3bb68ad8af549f5cc2d33a6f5db40 = L.marker(
+                [52.2037412, 6.8924049],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_95b6243d576a456c5ef47565c718ded2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6cf3bb68ad8af549f5cc2d33a6f5db40.setIcon(icon_95b6243d576a456c5ef47565c718ded2);
+        
+    
+        var popup_78323adf1bf62a1193f8ea4f7a21a127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c5b4607f756fc0bf561a13d110032b8 = $(`<div id="html_0c5b4607f756fc0bf561a13d110032b8" style="width: 100.0%; height: 100.0%;">Small Store Budget Center Spaansland, Enschede</div>`)[0];
+                popup_78323adf1bf62a1193f8ea4f7a21a127.setContent(html_0c5b4607f756fc0bf561a13d110032b8);
+            
+        
+
+        marker_6cf3bb68ad8af549f5cc2d33a6f5db40.bindPopup(popup_78323adf1bf62a1193f8ea4f7a21a127)
+        ;
+
+        
+    
+    
+            var marker_c11abb016c244c7020827d27fd556bbb = L.marker(
+                [52.2174509, 6.8993534],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_33890e933d990ba2f92066e066f07dee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c11abb016c244c7020827d27fd556bbb.setIcon(icon_33890e933d990ba2f92066e066f07dee);
+        
+    
+        var popup_add1ac4b229a410e791db63733ae91c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8d891c61a98e2f2bd1a4d3191c64408 = $(`<div id="html_e8d891c61a98e2f2bd1a4d3191c64408" style="width: 100.0%; height: 100.0%;">Small Store Flying Tiger Copenhagen Enschede Klanderij 49, Enschede</div>`)[0];
+                popup_add1ac4b229a410e791db63733ae91c5.setContent(html_e8d891c61a98e2f2bd1a4d3191c64408);
+            
+        
+
+        marker_c11abb016c244c7020827d27fd556bbb.bindPopup(popup_add1ac4b229a410e791db63733ae91c5)
+        ;
+
+        
+    
+    
+            var marker_456e85f2c23f69aad586480a746c164b = L.marker(
+                [52.1913554, 6.878853599999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_f29790c79f7a3e2793565abd19d17900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_456e85f2c23f69aad586480a746c164b.setIcon(icon_f29790c79f7a3e2793565abd19d17900);
+        
+    
+        var popup_129d20894af2d667ff6879917de0e8b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f280f322ff2d7499641680799b36e1f2 = $(`<div id="html_f280f322ff2d7499641680799b36e1f2" style="width: 100.0%; height: 100.0%;">Small Store Mediterrane Versmarkt Zuid Wesseler-Nering 21, Enschede</div>`)[0];
+                popup_129d20894af2d667ff6879917de0e8b9.setContent(html_f280f322ff2d7499641680799b36e1f2);
+            
+        
+
+        marker_456e85f2c23f69aad586480a746c164b.bindPopup(popup_129d20894af2d667ff6879917de0e8b9)
+        ;
+
+        
+    
+    
+            var marker_4c5b6d0bd4d367410499e3b227204231 = L.marker(
+                [52.2206331, 6.905616299999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_93b0c42c643d28cf7a88c410dc8b65ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c5b6d0bd4d367410499e3b227204231.setIcon(icon_93b0c42c643d28cf7a88c410dc8b65ed);
+        
+    
+        var popup_108c7c453c105bf5929cfae8c727a5f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2c01761484ab8f842b20ce9f4f96814 = $(`<div id="html_a2c01761484ab8f842b20ce9f4f96814" style="width: 100.0%; height: 100.0%;">Small Store Supermarkt Shamiran Lipperkerkstraat 36, Enschede</div>`)[0];
+                popup_108c7c453c105bf5929cfae8c727a5f3.setContent(html_a2c01761484ab8f842b20ce9f4f96814);
+            
+        
+
+        marker_4c5b6d0bd4d367410499e3b227204231.bindPopup(popup_108c7c453c105bf5929cfae8c727a5f3)
+        ;
+
+        
+    
+    
+            var marker_3a604bb385a0dd8420bdc9eeff461c67 = L.marker(
+                [52.193803, 6.901554],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_406d2ad6ad02ccc0d27cc106f8e9880a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a604bb385a0dd8420bdc9eeff461c67.setIcon(icon_406d2ad6ad02ccc0d27cc106f8e9880a);
+        
+    
+        var popup_539727352bfa817fb5f2ee65021e84db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_955e73edbec732979431f165fc7100e5 = $(`<div id="html_955e73edbec732979431f165fc7100e5" style="width: 100.0%; height: 100.0%;">Small Store Bigi’s Place Veldhoflanden 14, Enschede</div>`)[0];
+                popup_539727352bfa817fb5f2ee65021e84db.setContent(html_955e73edbec732979431f165fc7100e5);
+            
+        
+
+        marker_3a604bb385a0dd8420bdc9eeff461c67.bindPopup(popup_539727352bfa817fb5f2ee65021e84db)
+        ;
+
+        
+    
+    
+            var marker_d5e073c7d14b1eece6a781d2a7da9d58 = L.marker(
+                [52.1895027, 6.8710122],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_7295a4a95516f3ea6b3a410d09646ba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5e073c7d14b1eece6a781d2a7da9d58.setIcon(icon_7295a4a95516f3ea6b3a410d09646ba2);
+        
+    
+        var popup_6f44a616eb17403add3739d628b49422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a6e4ae9448d299aa5ed663a35a5e56d = $(`<div id="html_3a6e4ae9448d299aa5ed663a35a5e56d" style="width: 100.0%; height: 100.0%;">Small Store Supermarkt Het Oosterveld BV Het Oosterveld 10, Enschede</div>`)[0];
+                popup_6f44a616eb17403add3739d628b49422.setContent(html_3a6e4ae9448d299aa5ed663a35a5e56d);
+            
+        
+
+        marker_d5e073c7d14b1eece6a781d2a7da9d58.bindPopup(popup_6f44a616eb17403add3739d628b49422)
+        ;
+
+        
+    
+    
+            var marker_9f7f5f3aa0de05862f0ceea9d0b3329b = L.marker(
+                [52.221357, 6.893114],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_1efff7c20d071320dbd88c3c9a732582 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f7f5f3aa0de05862f0ceea9d0b3329b.setIcon(icon_1efff7c20d071320dbd88c3c9a732582);
+        
+    
+        var popup_53a9081ae727e723b8251a664283b7cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ce9f4de485c95c8676919b3414ddbe9 = $(`<div id="html_8ce9f4de485c95c8676919b3414ddbe9" style="width: 100.0%; height: 100.0%;">Small Store Wok to Go Korte Hengelosestraat 4, Enschede</div>`)[0];
+                popup_53a9081ae727e723b8251a664283b7cb.setContent(html_8ce9f4de485c95c8676919b3414ddbe9);
+            
+        
+
+        marker_9f7f5f3aa0de05862f0ceea9d0b3329b.bindPopup(popup_53a9081ae727e723b8251a664283b7cb)
+        ;
+
+        
+    
+    
+            var marker_90786d5ada9764618d8049cd98e94a4e = L.marker(
+                [52.2192722, 6.8946166],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_b83f7cd063e71340c3489ebd0c99d44b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90786d5ada9764618d8049cd98e94a4e.setIcon(icon_b83f7cd063e71340c3489ebd0c99d44b);
+        
+    
+        var popup_0c4b8b8883e9f68674da4e3de063d8d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d90ff11c162ed8068942df589195c4e8 = $(`<div id="html_d90ff11c162ed8068942df589195c4e8" style="width: 100.0%; height: 100.0%;">Small Store Ramayana Walstraat 15-17, Enschede</div>`)[0];
+                popup_0c4b8b8883e9f68674da4e3de063d8d8.setContent(html_d90ff11c162ed8068942df589195c4e8);
+            
+        
+
+        marker_90786d5ada9764618d8049cd98e94a4e.bindPopup(popup_0c4b8b8883e9f68674da4e3de063d8d8)
+        ;
+
+        
+    
+    
+            var marker_708f2812fd0b62cf4c87a824c86930a3 = L.marker(
+                [52.2163027, 6.950762099999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_14c050b0d0751462d0554c35f4f90340 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_708f2812fd0b62cf4c87a824c86930a3.setIcon(icon_14c050b0d0751462d0554c35f4f90340);
+        
+    
+        var popup_01a109e571c0b405caa497b076b869d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_034cbc64ab3d02086e2db90a8dc37a73 = $(`<div id="html_034cbc64ab3d02086e2db90a8dc37a73" style="width: 100.0%; height: 100.0%;">Small Store PLUS Enschede Eschmarke Esmarkelaan 14, Enschede</div>`)[0];
+                popup_01a109e571c0b405caa497b076b869d0.setContent(html_034cbc64ab3d02086e2db90a8dc37a73);
+            
+        
+
+        marker_708f2812fd0b62cf4c87a824c86930a3.bindPopup(popup_01a109e571c0b405caa497b076b869d0)
+        ;
+
+        
+    
+    
+            var marker_9ac64cfc7625a06a256663734ddbbe1c = L.marker(
+                [52.1864794, 6.8825715],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_937ec25d2430ac5edb8d72fd556e9272 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ac64cfc7625a06a256663734ddbbe1c.setIcon(icon_937ec25d2430ac5edb8d72fd556e9272);
+        
+    
+        var popup_1ba6bd2a6b10d73bef642a95fac4f867 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08296a40c47b4a74a4b96bc3ef559969 = $(`<div id="html_08296a40c47b4a74a4b96bc3ef559969" style="width: 100.0%; height: 100.0%;">Small Store Levensmiddelenwinkel Het Midden Oosten De Posten 165, Enschede</div>`)[0];
+                popup_1ba6bd2a6b10d73bef642a95fac4f867.setContent(html_08296a40c47b4a74a4b96bc3ef559969);
+            
+        
+
+        marker_9ac64cfc7625a06a256663734ddbbe1c.bindPopup(popup_1ba6bd2a6b10d73bef642a95fac4f867)
+        ;
+
+        
+    
+    
+            var marker_7e8389a0f0c95f3c3434bc7085d38c91 = L.marker(
+                [52.2142593, 6.860298999999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_dc1f546eee281e7a9c9d7f8ffaa236e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e8389a0f0c95f3c3434bc7085d38c91.setIcon(icon_dc1f546eee281e7a9c9d7f8ffaa236e4);
+        
+    
+        var popup_3093a351a6897e2f11197b9115bf55c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_923bdf8842a63eefd9c1703fe9e8a7ff = $(`<div id="html_923bdf8842a63eefd9c1703fe9e8a7ff" style="width: 100.0%; height: 100.0%;">Small Store Mleczko Delikatesy Enschede Supermarket Thomas de Keyserstraat 63, Enschede</div>`)[0];
+                popup_3093a351a6897e2f11197b9115bf55c2.setContent(html_923bdf8842a63eefd9c1703fe9e8a7ff);
+            
+        
+
+        marker_7e8389a0f0c95f3c3434bc7085d38c91.bindPopup(popup_3093a351a6897e2f11197b9115bf55c2)
+        ;
+
+        
+    
+    
+            var marker_df2bc890f554d403f485aa5a155ef789 = L.marker(
+                [52.2190909, 6.8957885],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_3797649d77b691865ff053a356b0271d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_df2bc890f554d403f485aa5a155ef789.setIcon(icon_3797649d77b691865ff053a356b0271d);
+        
+    
+        var popup_ea2d4dfe9da28d8fbfebe8c7fa10f157 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f6764761095665a673ba088dc0d387c = $(`<div id="html_0f6764761095665a673ba088dc0d387c" style="width: 100.0%; height: 100.0%;">Small Store Die Grenze Van Loenshof 2a, Enschede</div>`)[0];
+                popup_ea2d4dfe9da28d8fbfebe8c7fa10f157.setContent(html_0f6764761095665a673ba088dc0d387c);
+            
+        
+
+        marker_df2bc890f554d403f485aa5a155ef789.bindPopup(popup_ea2d4dfe9da28d8fbfebe8c7fa10f157)
+        ;
+
+        
+    
+    
+            var marker_4c78ef04dc1ca556da59283510eabfb6 = L.marker(
+                [52.1922524, 6.880077699999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_2d0d70bc795d37de1f2bdd56401e2f30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c78ef04dc1ca556da59283510eabfb6.setIcon(icon_2d0d70bc795d37de1f2bdd56401e2f30);
+        
+    
+        var popup_f080f03a2bd33f037a92ab90fe29d15e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_367039acd136a4a4829ccdafdcaaaa66 = $(`<div id="html_367039acd136a4a4829ccdafdcaaaa66" style="width: 100.0%; height: 100.0%;">Small Store Medikamente Die Grenze Enschede Zuid Wesseler-Nering 2H, Enschede</div>`)[0];
+                popup_f080f03a2bd33f037a92ab90fe29d15e.setContent(html_367039acd136a4a4829ccdafdcaaaa66);
+            
+        
+
+        marker_4c78ef04dc1ca556da59283510eabfb6.bindPopup(popup_f080f03a2bd33f037a92ab90fe29d15e)
+        ;
+
+        
+    
+    
+            var marker_8209d3c97a8cd86c233060cb9e270284 = L.marker(
+                [52.20337079999999, 6.8925932],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_44ae966f241a24dd93a8c5639db080f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8209d3c97a8cd86c233060cb9e270284.setIcon(icon_44ae966f241a24dd93a8c5639db080f6);
+        
+    
+        var popup_8ef5ebeeed5108e900a067f11d200a1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_087e5d969bba660d20f23c860a755bd0 = $(`<div id="html_087e5d969bba660d20f23c860a755bd0" style="width: 100.0%; height: 100.0%;">Small Store Medikamente Die Grenze Enschede Spaansland Spaansland 15, Enschede</div>`)[0];
+                popup_8ef5ebeeed5108e900a067f11d200a1c.setContent(html_087e5d969bba660d20f23c860a755bd0);
+            
+        
+
+        marker_8209d3c97a8cd86c233060cb9e270284.bindPopup(popup_8ef5ebeeed5108e900a067f11d200a1c)
+        ;
+
+        
+    
+    
+            var marker_44b03eda530f5623e934274511d36342 = L.marker(
+                [52.2292589, 6.859210099999999],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_2917fbc74346ee47d8d5475e1e508e9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44b03eda530f5623e934274511d36342.setIcon(icon_2917fbc74346ee47d8d5475e1e508e9e);
+        
+    
+        var popup_fa789905dcd8c6b5acce3a00f965a3d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_580cb3e76d410d67e04e8bd89ea5f301 = $(`<div id="html_580cb3e76d410d67e04e8bd89ea5f301" style="width: 100.0%; height: 100.0%;">Small Store Medikamente Die Grenze Enschede Twekkelerveld G.J. van Heekstraat 221, Enschede</div>`)[0];
+                popup_fa789905dcd8c6b5acce3a00f965a3d2.setContent(html_580cb3e76d410d67e04e8bd89ea5f301);
+            
+        
+
+        marker_44b03eda530f5623e934274511d36342.bindPopup(popup_fa789905dcd8c6b5acce3a00f965a3d2)
+        ;
+
+        
+    
+    
+            var marker_3facd1aec2573fb7a59757fc932fd933 = L.marker(
+                [52.2190239, 6.9271713],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ea8338097ba04e31bc6a9a84089b7a97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3facd1aec2573fb7a59757fc932fd933.setIcon(icon_ea8338097ba04e31bc6a9a84089b7a97);
+        
+    
+        var popup_add87572a66e60903fcd2eee92ad6007 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd9bef2de2377b097d7198ced083c62 = $(`<div id="html_0fd9bef2de2377b097d7198ced083c62" style="width: 100.0%; height: 100.0%;">Small Store Die Grenze Medikamente Parfumerie Noord Esmarkerrondweg 431, Enschede</div>`)[0];
+                popup_add87572a66e60903fcd2eee92ad6007.setContent(html_0fd9bef2de2377b097d7198ced083c62);
+            
+        
+
+        marker_3facd1aec2573fb7a59757fc932fd933.bindPopup(popup_add87572a66e60903fcd2eee92ad6007)
+        ;
+
+        
+    
+    
+            var marker_d1df33eead89cab906b987fc9dcf3105 = L.marker(
+                [52.21904540000001, 6.9271761],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_4844fea6a13819a38e7d6c8e16229d08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1df33eead89cab906b987fc9dcf3105.setIcon(icon_4844fea6a13819a38e7d6c8e16229d08);
+        
+    
+        var popup_9cee003f0809fd28fb8c8e44a68bf53e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d8d07cf430cef166dea616a0aa2d627 = $(`<div id="html_4d8d07cf430cef166dea616a0aa2d627" style="width: 100.0%; height: 100.0%;">Small Store Medikamente Die Grenze Enschede Miro Gronausestraat 240, Enschede</div>`)[0];
+                popup_9cee003f0809fd28fb8c8e44a68bf53e.setContent(html_4d8d07cf430cef166dea616a0aa2d627);
+            
+        
+
+        marker_d1df33eead89cab906b987fc9dcf3105.bindPopup(popup_9cee003f0809fd28fb8c8e44a68bf53e)
+        ;
+
+        
+    
+    
+            var marker_f3d2adf9d46ffd4519c1d35f506b2058 = L.marker(
+                [52.2219022, 6.8461104],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_786fa64ae8b29b894b5f8385f3056c6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3d2adf9d46ffd4519c1d35f506b2058.setIcon(icon_786fa64ae8b29b894b5f8385f3056c6a);
+        
+    
+        var popup_c678fd19cbd0c52cc20162a834c6d927 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ce5c3b16c95caf6e3a9f5ff7e466670 = $(`<div id="html_7ce5c3b16c95caf6e3a9f5ff7e466670" style="width: 100.0%; height: 100.0%;">Market Area Frits Huusken Het Wolbert 27, Enschede</div>`)[0];
+                popup_c678fd19cbd0c52cc20162a834c6d927.setContent(html_7ce5c3b16c95caf6e3a9f5ff7e466670);
+            
+        
+
+        marker_f3d2adf9d46ffd4519c1d35f506b2058.bindPopup(popup_c678fd19cbd0c52cc20162a834c6d927)
+        ;
+
+        
+    
+    
+            var marker_8dd3e68cf8fc1dc9b522db69b7d1c247 = L.marker(
+                [52.2301459, 6.8563673],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_827d0ff2a4ef3d374c13e0a22fdd88bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8dd3e68cf8fc1dc9b522db69b7d1c247.setIcon(icon_827d0ff2a4ef3d374c13e0a22fdd88bb);
+        
+    
+        var popup_09e5e4aab1d767d9849c8a9e1f8c1905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ec045e740ea1daac6cda15b6cbfb60 = $(`<div id="html_05ec045e740ea1daac6cda15b6cbfb60" style="width: 100.0%; height: 100.0%;">Market Area De Groentebroertjes Gebr. van Gemert B.V. Zonstraat 88, Enschede</div>`)[0];
+                popup_09e5e4aab1d767d9849c8a9e1f8c1905.setContent(html_05ec045e740ea1daac6cda15b6cbfb60);
+            
+        
+
+        marker_8dd3e68cf8fc1dc9b522db69b7d1c247.bindPopup(popup_09e5e4aab1d767d9849c8a9e1f8c1905)
+        ;
+
+        
+    
+    
+            var marker_dc1f424dbbbd7684aeece456f456336a = L.marker(
+                [52.2219913, 6.8992247],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_6b80e074515185c3d5f3f8fef28f90ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc1f424dbbbd7684aeece456f456336a.setIcon(icon_6b80e074515185c3d5f3f8fef28f90ef);
+        
+    
+        var popup_9156e2c5a9a796787e4cf502480e41ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6860b51f260cca055c2ccdc0661261e8 = $(`<div id="html_6860b51f260cca055c2ccdc0661261e8" style="width: 100.0%; height: 100.0%;">Market Area Ekoplaza Enschede - biologische supermarkt De Heurne 59, Enschede</div>`)[0];
+                popup_9156e2c5a9a796787e4cf502480e41ef.setContent(html_6860b51f260cca055c2ccdc0661261e8);
+            
+        
+
+        marker_dc1f424dbbbd7684aeece456f456336a.bindPopup(popup_9156e2c5a9a796787e4cf502480e41ef)
+        ;
+
+        
+    
+    
+            var marker_19ee271127c3a34edc06590f7795507e = L.marker(
+                [52.216168, 6.902163],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_ef1e169bb2234e474942a0e50d8a4106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_19ee271127c3a34edc06590f7795507e.setIcon(icon_ef1e169bb2234e474942a0e50d8a4106);
+        
+    
+        var popup_a5c6dc8f66d97ef690296214f06d1ce4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2bb9b18d9ace71b0dde8d3d7cf56ac0 = $(`<div id="html_e2bb9b18d9ace71b0dde8d3d7cf56ac0" style="width: 100.0%; height: 100.0%;">Market Area Action Boulevard 1945 372, Enschede</div>`)[0];
+                popup_a5c6dc8f66d97ef690296214f06d1ce4.setContent(html_e2bb9b18d9ace71b0dde8d3d7cf56ac0);
+            
+        
+
+        marker_19ee271127c3a34edc06590f7795507e.bindPopup(popup_a5c6dc8f66d97ef690296214f06d1ce4)
+        ;
+
+        
+    
+    
+            var marker_20b18487c10734107d881a93342a66ec = L.marker(
+                [52.2178568, 6.899537],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_f547735c2ea4480998f76535e8a5f471 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20b18487c10734107d881a93342a66ec.setIcon(icon_f547735c2ea4480998f76535e8a5f471);
+        
+    
+        var popup_ff27eea38bdca47466e714d3e44d5e85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7f0b4ad61a4e791db4a34883f73e4f6 = $(`<div id="html_a7f0b4ad61a4e791db4a34883f73e4f6" style="width: 100.0%; height: 100.0%;">Market Area MediaMarkt Enschede Klanderij 63, Enschede</div>`)[0];
+                popup_ff27eea38bdca47466e714d3e44d5e85.setContent(html_a7f0b4ad61a4e791db4a34883f73e4f6);
+            
+        
+
+        marker_20b18487c10734107d881a93342a66ec.bindPopup(popup_ff27eea38bdca47466e714d3e44d5e85)
+        ;
+
+        
+    
+    
+            var marker_ffd211f12f8359f4414e95b82a3341b0 = L.marker(
+                [52.2169947, 6.8981008],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_a6dc885b6e160f35c628541650223337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffd211f12f8359f4414e95b82a3341b0.setIcon(icon_a6dc885b6e160f35c628541650223337);
+        
+    
+        var popup_169508269ba9379c106592a4f1fc78c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d00d42ba0f94d543ad5fc085c785436 = $(`<div id="html_6d00d42ba0f94d543ad5fc085c785436" style="width: 100.0%; height: 100.0%;">Market Area HEMA Enschede Hendrik Jan van Heekplein 74, Enschede</div>`)[0];
+                popup_169508269ba9379c106592a4f1fc78c4.setContent(html_6d00d42ba0f94d543ad5fc085c785436);
+            
+        
+
+        marker_ffd211f12f8359f4414e95b82a3341b0.bindPopup(popup_169508269ba9379c106592a4f1fc78c4)
+        ;
+
+        
+    
+    
+            var marker_d9531514da27f048fc66797d995fcd2a = L.marker(
+                [52.2250197, 6.8641182],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_5a0d6029498c996438b024b03786e6d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9531514da27f048fc66797d995fcd2a.setIcon(icon_5a0d6029498c996438b024b03786e6d8);
+        
+    
+        var popup_a11bb2c73703982b60f4d0de1f10bb85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12ac9c943b6c85f4683284aa0943a8f6 = $(`<div id="html_12ac9c943b6c85f4683284aa0943a8f6" style="width: 100.0%; height: 100.0%;">Market Area M&M Bazaar Johan Wijnoltsstraat 125, Enschede</div>`)[0];
+                popup_a11bb2c73703982b60f4d0de1f10bb85.setContent(html_12ac9c943b6c85f4683284aa0943a8f6);
+            
+        
+
+        marker_d9531514da27f048fc66797d995fcd2a.bindPopup(popup_a11bb2c73703982b60f4d0de1f10bb85)
+        ;
+
+        
+    
+    
+            var marker_56575dad84b27e989807d2bc2f2790b1 = L.marker(
+                [52.2269037, 6.8629023],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_b33b507113a7133f13251a065a01ccc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56575dad84b27e989807d2bc2f2790b1.setIcon(icon_b33b507113a7133f13251a065a01ccc8);
+        
+    
+        var popup_22544d569c5579bd413b9353c31c8ad2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9c4fb3aed8aa0afce47e6aef30d0aa2 = $(`<div id="html_b9c4fb3aed8aa0afce47e6aef30d0aa2" style="width: 100.0%; height: 100.0%;">Market Area Pleintje Twekkelerveld Othmar ten Catestraat 151, Enschede</div>`)[0];
+                popup_22544d569c5579bd413b9353c31c8ad2.setContent(html_b9c4fb3aed8aa0afce47e6aef30d0aa2);
+            
+        
+
+        marker_56575dad84b27e989807d2bc2f2790b1.bindPopup(popup_22544d569c5579bd413b9353c31c8ad2)
+        ;
+
+        
+    
+    
+            var marker_bca85532fc7c7e1d073a7672ba3d6b38 = L.marker(
+                [52.2193337, 6.9270391],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_657b43ae1cde0ee7b231d47ea8b5297e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bca85532fc7c7e1d073a7672ba3d6b38.setIcon(icon_657b43ae1cde0ee7b231d47ea8b5297e);
+        
+    
+        var popup_3a7b236b6eaa1f07fb93b30d7fdd6e77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52a606dc36ecf6c546d8638520b7171a = $(`<div id="html_52a606dc36ecf6c546d8638520b7171a" style="width: 100.0%; height: 100.0%;">Market Area Big Bazar Noord Esmarkerrondweg 421-14, Enschede</div>`)[0];
+                popup_3a7b236b6eaa1f07fb93b30d7fdd6e77.setContent(html_52a606dc36ecf6c546d8638520b7171a);
+            
+        
+
+        marker_bca85532fc7c7e1d073a7672ba3d6b38.bindPopup(popup_3a7b236b6eaa1f07fb93b30d7fdd6e77)
+        ;
+
+        
+    
+    
+            var marker_4b68a39baabc3cf968c21bda2b215ee4 = L.marker(
+                [52.19128019999999, 6.8806631],
+                {}
+            ).addTo(marker_cluster_15a577c58a78c4cb0c66c7560588c773);
+        
+    
+            var icon_036b6d63c9131f0aa7b8dbc4ddfa8862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b68a39baabc3cf968c21bda2b215ee4.setIcon(icon_036b6d63c9131f0aa7b8dbc4ddfa8862);
+        
+    
+        var popup_a1649cfa018dd2dcc12aa5789df1c68b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_161f5348cab17b08a1e2c03b8109c83b = $(`<div id="html_161f5348cab17b08a1e2c03b8109c83b" style="width: 100.0%; height: 100.0%;">Market Area Big Baza Wesseler-Nering 40C, Enschede</div>`)[0];
+                popup_a1649cfa018dd2dcc12aa5789df1c68b.setContent(html_161f5348cab17b08a1e2c03b8109c83b);
+            
+        
+
+        marker_4b68a39baabc3cf968c21bda2b215ee4.bindPopup(popup_a1649cfa018dd2dcc12aa5789df1c68b)
+        ;
+
+        
+    
+    
+            marker_cluster_15a577c58a78c4cb0c66c7560588c773.addTo(map_cd0ae1b230e44bedbb54a0f4756cb206);
+        
+    
+            var marker_64027ee34c4d78246915b1f0c50fdf2b = L.marker(
+                [52.2180177, 6.891761499999999],
+                {}
+            ).addTo(map_cd0ae1b230e44bedbb54a0f4756cb206);
+        
+    
+            var div_icon_c85d4a8c2185ca43d3f3f2fff310ba1a = L.divIcon({"className": "empty", "html": "\n            \u003cdiv style=\"position: relative;\"\u003e\n                \u003cdiv style=\"position: absolute; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 20px solid green;\"\u003e\u003c/div\u003e\n            \u003c/div\u003e"});
+            marker_64027ee34c4d78246915b1f0c50fdf2b.setIcon(div_icon_c85d4a8c2185ca43d3f3f2fff310ba1a);
+        
+    
+        var popup_239505bfbea8bc18f0a75ed480c407b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_114f80cacdb66e9227da3c6551f3716e = $(`<div id="html_114f80cacdb66e9227da3c6551f3716e" style="width: 100.0%; height: 100.0%;">Input Postal Code</div>`)[0];
+                popup_239505bfbea8bc18f0a75ed480c407b6.setContent(html_114f80cacdb66e9227da3c6551f3716e);
+            
+        
+
+        marker_64027ee34c4d78246915b1f0c50fdf2b.bindPopup(popup_239505bfbea8bc18f0a75ed480c407b6)
+        ;
+
+        
+    
+    
+            map_cd0ae1b230e44bedbb54a0f4756cb206.fitBounds(
+                [[52.2180177, 6.891761499999999], [52.22931999999999, 6.857769999999999], [52.21182349999999, 6.8841173], [52.208918, 6.9086512], [52.1919543, 6.8811025], [52.22976999999999, 6.92116], [52.2292066, 6.8583859], [52.2193937, 6.929265999999999], [52.19159759999999, 6.8785875], [52.26241, 6.822234], [52.2288192, 6.859227199999999], [52.2254376, 6.890025700000001], [52.22464919999999, 6.881961599999999], [52.2142652, 6.886095399999999], [52.2290973, 6.858635599999999], [52.212979, 6.895100999999999], [52.2215739, 6.8979577], [52.23152100000001, 6.891671], [52.223856, 6.910622999999999], [52.206207, 6.878991], [52.21147, 6.86309], [52.228929, 6.920525], [52.22468199999999, 6.956032], [52.2295314, 6.858207699999999], [52.2106389, 6.862465900000001], [52.2436598, 6.8514696], [52.2168453, 6.8991433], [52.2121874, 6.8626554], [52.2242926, 6.911092300000001], [52.2195615, 6.9270488], [52.19304649999999, 6.9015312], [52.1936662, 6.9007779], [52.2123107, 6.8652548], [52.2129586, 6.8619506], [52.2199991, 6.904420600000001], [52.2248454, 6.881292699999999], [52.2038715, 6.8928805], [52.2391667, 6.894722199999999], [52.2626858, 6.820494], [52.1922092, 6.8783441], [52.1939381, 6.8557858], [52.2222323, 6.8902084], [52.23922839999999, 6.8948955], [52.2392737, 6.8924537], [52.219781, 6.967314], [52.2243237, 6.958698399999999], [52.2123309, 6.865348099999999], [52.22409, 6.945495999999999], [52.2392894, 6.8935767], [52.2392225, 6.8931213], [52.2394557, 6.892996699999999], [52.2390959, 6.892912300000001], [52.2249388, 6.9429839], [52.220901, 6.893631], [52.2493843, 6.912335499999999], [52.20697209999999, 6.867026000000001], [52.2207287, 6.8856883], [52.21965489999999, 6.8981127], [52.2194886, 6.894218], [52.214392, 6.896128699999999], [52.21661599999999, 6.946478], [52.2189828, 6.893942699999999], [52.2036601, 6.8925971], [52.19155550000001, 6.878836199999999], [52.2196373, 6.8939157], [52.2196796, 6.9016498], [52.20881, 6.8942504], [52.2062482, 6.8794018], [52.2314452, 6.8929481], [52.2037412, 6.8924049], [52.2174509, 6.8993534], [52.1913554, 6.878853599999999], [52.2206331, 6.905616299999999], [52.193803, 6.901554], [52.1895027, 6.8710122], [52.221357, 6.893114], [52.2192722, 6.8946166], [52.2163027, 6.950762099999999], [52.1864794, 6.8825715], [52.2142593, 6.860298999999999], [52.2190909, 6.8957885], [52.1922524, 6.880077699999999], [52.20337079999999, 6.8925932], [52.2292589, 6.859210099999999], [52.2190239, 6.9271713], [52.21904540000001, 6.9271761], [52.2219022, 6.8461104], [52.2301459, 6.8563673], [52.2219913, 6.8992247], [52.216168, 6.902163], [52.2178568, 6.899537], [52.2169947, 6.8981008], [52.2250197, 6.8641182], [52.2269037, 6.8629023], [52.2193337, 6.9270391], [52.19128019999999, 6.8806631]],
+                {}
+            );
+        
+</script>
+</html>
