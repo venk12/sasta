@@ -4,9 +4,11 @@ import streamlit.components.v1 as components
 from component import map
 import time
 import pandas as pd
+import re
 from elevenlabs import VoiceSettings
 from elevenlabs.client import ElevenLabs
 from elevenlabs import play, stream, save
+from product_match import match_products
 
 from geocode import generate_map
 
@@ -30,19 +32,21 @@ st.subheader("find the best grocery deals near you")
 # Define the system prompt to guide the bot's personality
 system_prompt = {
     "role": "system",
-    "content": "You are a helpful and resourceful virtual shopping assistant" + 
-                "specializing in finding the best grocery prices and deals from local supermarkets," + 
-                "including Albert Heijn, ALDI, Jumbo, Lidl, Dirk." +
-                "You can then receive requests" + "Sometime the user might give you a receipe, in that case, you should list down the groceries required" +
-                " to cook the receipe and then use that list to find the best prices across supermarket." +
+    "content":  " You are a resourceful virtual grocery shopping assistant" + 
+                " You specialize in finding the best prices and deals from local supermarkets in the Netherlands," + 
+                " including Albert Heijn, ALDI, Jumbo, Lidl, Dirk." +
+                " You can receive requests of two kinds." + 
+                " Sometime the user will give you a receipe, in that case, you should list down the groceries required for making that dish(es) for 2 people" +
+                " In such cases, ensure that you produce a table (with these 3 columns) ingredients , amount (in grams, liters or stuks or other units), quantity and ask the user to confirm."+
+                " The header should be in english, the content should be in dutch. If there are"+
+                " changes accomodate that through conversation." +
+                " Then use that table to find the best prices across supermarket." +
                 " If the user inputs single items or lists of items and provide a clear table showing price comparisons across these stores." +
-                # f"You can use the price list from this table below:\n{df_prices.to_string(index=False)}\n"+
                 " To the output, Add a column called Lowest Price 💸 populate it with the supermarket where you can get lowest price"+
                 " Below the table also provide the links to the product pages from store which has the lowest price "+
                 " You can also provide detailed information on the best deals and offers. such as Albert Heijn BONUS, Jumbo EXTRA" +
                 " After giving all the details ask them where they usually get their groceries from." +
-                " based on their response, give them the savings from sasta ( difference between cost of groceries from the supermarket they usually buy from " +
-                " vs the lowest price from the table)"+
+                " based on their response, calculate savings (current supermarket vs the lowest price from the table)"+
                 " and also the monthly savings (how much they could potentially save per month) by multiplying the above number by 4" +
                 " Once you give this figure, ask for a call to action to signup using this link: https://form.jotform.com/242401875157356"
                 " Your tone is friendly, professional, and efficient, helping users save time and money on their grocery shopping." + 
@@ -54,10 +58,8 @@ with st.sidebar:
     st.header("Your Location")
     postal_code = st.text_input("Enter your postal code", value="")
 
-
-# Display map interactive
-# st.write(components.html(map, height=800))
 location_identified = False
+list_confirmed = False
 
 # Display postal code in the main app for testing (you can remove this later)
 if postal_code == "":
@@ -70,32 +72,12 @@ if postal_code != "" and location_identified == False:
 
         html_file = "supermarkets_map.html"
         display_map(html_file)
-
-        # Simulate waiting spinner for 2 seconds
-        # time.sleep(1.5)    
     
-    location_response = "Nice. You have the following shops near you: AH, Lidl, Jumbo, and Aldi near you. Perfect!"
-    query = "What do you want to buy today?"
+    location_response = "Here you go, these are the grocery shops near you!"
+    query = "What do you want to buy/cook today?"
 
-    # Display the response and query
-    st.write(location_response)
     st.write(query)
     location_identified = True
-
-    # with st.spinner('Generating a sample grocery list for you...'):
-    #     time.sleep(1)
-    #     # Display the sample grocery list as a table
-    #     sample_items = df_prices[['Items', 'Qty']].head(5)
-    #     # st.table(sample_items)
-
-    #     # Create a string version of the table to "copy"
-    #     grocery_list = sample_items.to_string(index=False)
-        
-    #     # Button to copy to clipboard
-    #     st.info(
-    #         "You can copy these sample items to the clipboard by clicking here ↘️")
-    #     st.code(
-    #         grocery_list)
 
 # Initialize session state for the model and messages
 if "openai_model" not in st.session_state:
@@ -104,12 +86,18 @@ if "openai_model" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = [system_prompt]  # Add system prompt at the start
 
+
+if "ingredients_df" not in st.session_state:
+    st.session_state.ingredients_df = None
+
+if "show_confirm_button" not in st.session_state:
+    st.session_state.show_confirm_button = False
+
 # Handle user input and bot responses
 if prompt := st.chat_input("What do you want to buy today?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     
     with st.chat_message("user"):
-        # Simulate waiting spinner for 2 seconds
         with st.spinner('Thinking...'):
             time.sleep(1)
         st.markdown(prompt)
@@ -124,5 +112,38 @@ if prompt := st.chat_input("What do you want to buy today?"):
             stream=True,
         )
         response = st.write_stream(stream)
-    
+        
+        # Extract ingredients table from the response
+        table_match = re.search(r'\|.*\|', response, re.DOTALL)
+        if table_match:
+            table_text = table_match.group(0)
+            lines = table_text.split('\n')
+            headers = [header.strip() for header in lines[0].split('|') if header.strip()]
+            data = []
+            for line in lines[2:]:  # Skip the header separator line
+                row = [cell.strip() for cell in line.split('|') if cell.strip()]
+                if row:
+                    data.append(row)
+            
+            st.session_state.ingredients_df = pd.DataFrame(data, columns=headers)
+            st.session_state.show_confirm_button = True
+        else:
+            st.session_state.show_confirm_button = False
+
     st.session_state.messages.append({"role": "assistant", "content": response})
+
+# Add a confirmation button only if ingredients are available
+if st.session_state.show_confirm_button:
+    if st.button("Confirm Ingredients"):
+        if st.session_state.ingredients_df is not None:
+            st.write("Ingredients confirmed:")
+
+            st.dataframe(st.session_state.ingredients_df)
+            result_df = match_products(st.session_state.ingredients_df)
+            st.write("Top picks from the database (Needs pruning)..")
+            st.dataframe(result_df)
+
+            print("Confirmed Ingredients DataFrame:")
+            print(st.session_state.ingredients_df)
+        else:
+            st.write("No ingredients to confirm. Please ask for a recipe first.")
