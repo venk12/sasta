@@ -32,25 +32,15 @@ st.subheader("find the best grocery deals near you")
 # Define the system prompt to guide the bot's personality
 system_prompt = {
     "role": "system",
-    "content":  " You are a resourceful virtual grocery shopping assistant" + 
+    "content":  " You are a resourceful virtual grocery shopping assistant speaks usually in english" + 
                 " You specialize in finding the best prices and deals from local supermarkets in the Netherlands," + 
                 " including Albert Heijn, ALDI, Jumbo, Lidl, Dirk." +
                 " You can receive requests of two kinds." + 
-                " Sometime the user will give you a receipe, in that case, you should list down the groceries required for making that dish(es) for 2 people" +
-                " In such cases, ensure that you produce a table (with these 3 columns) ingredients , amount (in grams, liters or stuks or other units), quantity and ask the user to confirm."+
+                " Sometime the user will give you a receipe/receipes, in that case, you should list down all the groceries required ( this one should be in dutch) for making that dish(es)for 2 people" +
+                " In such cases, always produce a table with these 3 columns ingredients , amount (in grams, liters or stuks or other units), quantity (1 by default) and ask the user to confirm."+
                 " The header should be in english, the content should be in dutch. If there are"+
-                " changes accomodate that through conversation." +
-                " Then use that table to find the best prices across supermarket." +
-                " If the user inputs single items or lists of items and provide a clear table showing price comparisons across these stores." +
-                " To the output, Add a column called Lowest Price 💸 populate it with the supermarket where you can get lowest price"+
-                " Below the table also provide the links to the product pages from store which has the lowest price "+
-                " You can also provide detailed information on the best deals and offers. such as Albert Heijn BONUS, Jumbo EXTRA" +
-                " After giving all the details ask them where they usually get their groceries from." +
-                " based on their response, calculate savings (current supermarket vs the lowest price from the table)"+
-                " and also the monthly savings (how much they could potentially save per month) by multiplying the above number by 4" +
-                " Once you give this figure, ask for a call to action to signup using this link: https://form.jotform.com/242401875157356"
-                " Your tone is friendly, professional, and efficient, helping users save time and money on their grocery shopping." + 
-                " Whenever possible, you offer additional tips for budget-friendly choices and seasonal discounts."
+                " changes accomodate that through conversation. Wait for user to confirm the ingredients"
+                
 }
 
 # Sidebar input for postal code
@@ -101,6 +91,11 @@ if prompt := st.chat_input("What do you want to buy today?"):
         with st.spinner('Thinking...'):
             time.sleep(1)
         st.markdown(prompt)
+    # Add a system prompt at the end of the messages
+    st.session_state.messages.append({
+        "role": "system",
+        "content": "Now that the user has provided their shopping list, please analyze it and provide a detailed price comparison across different supermarkets. Include a column for the lowest price and highlight the best deals. After the comparison, ask about their usual shopping location and calculate potential savings."
+    })
 
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
@@ -140,8 +135,27 @@ if st.session_state.show_confirm_button:
 
             st.dataframe(st.session_state.ingredients_df)
             result_df = match_products(st.session_state.ingredients_df)
-            st.write("Top picks from the database (Needs pruning)..")
-            st.dataframe(result_df)
+            # st.write("Top picks from the database (Needs pruning)..")
+            # st.dataframe(result_df)
+
+            st.session_state.messages.append({
+                "role": "system",
+                "content": "Now that the table is here:" +
+                result_df.to_string() +               
+                "Analyze it and provide a Lowest price for the products across different supermarkets in a table (columns: Product, Sasta Price, Supermarket Picked)."+
+                "After the comparison, ask about their usual shopping location and calculate potential savings."
+            })
+
+            stream = client.chat.completions.create(
+            model=st.session_state["openai_model"],
+            messages=[
+                {"role": m["role"], "content": m["content"]}
+                for m in st.session_state.messages
+            ],
+            stream=True,
+            )
+            response = st.write_stream(stream)
+
 
             print("Confirmed Ingredients DataFrame:")
             print(st.session_state.ingredients_df)
